@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#" data-behavior="i18n" data-environment="prod" data-server-mode="publish" data-dc="a" class="  twtr-type--chirp">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile Timeline | Docs | X Developer Platform  </title>
+  <meta name="description">
+  <link rel="canonical" href="https://developer.x.com/en/docs/x-for-websites/timelines/guides/profile-timeline">
+  <meta property="og:url" content="https://developer.x.com/en/docs/x-for-websites/timelines/guides/profile-timeline">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Profile Timeline">
+  <meta property="og:image" content="https://developer.x.com/content/dam/developer-twitter/x_sharing_card.png.twimg.768.png">
+  <meta name="keywords">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" hreflang="en" href="https://developer.x.com/en/docs/x-for-websites/timelines/guides/profile-timeline">
+  <meta name="twitter:widgets:new-embed-design" content="on">
+  <meta name="twitter:widgets:csp" content="on">
+  <link href="https://abs.twimg.com/favicons/twitter.3.ico" rel="shortcut icon" type="image/x-icon">
+  <script type="application/json" id="analytics-settings" nonce="sP/WkYBGyG6WqRric7AIUkwn">{&quot;google&quot;:{&quot;accounts&quot;:[],&quot;options&quot;:{&quot;displayAdvertisingFeatures&quot;:false}},&quot;scribe&quot;:{&quot;scribeSectionWithImpression&quot;:false},&quot;trackingPixel&quot;:{},&quot;bing&quot;:{}}</script>
+  <script type="application/json" class="u14-data-layer" data-component="u14-data-layer" id="data-layer" nonce="sP/WkYBGyG6WqRric7AIUkwn">{"page":{"pageId":"f523c73","pageKey":"f523c73-en-en","pageName":"Profile Timeline","pagePath":"/content/developer-twitter/en/docs/x-for-websites/timelines/guides/profile-timeline","pageType":"documentation-page","pagePublishDate":"","language":"en","geoRegion":"en","category":{"tags":{"tagIDs":[],"tagNames":[]},"scribe":{"component":"x-for-websites/timelines/guides/profile-timeline","section":"docs","page":"developer","element":"page"}},"attribute":{}}}</script>
+  <link rel="preload" href="https://fonts.twitter.com/chirp/chirp-bold-italic-web.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.twitter.com/chirp/chirp-bold-web.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.twitter.com/chirp/chirp-display-extended-black-web.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.twitter.com/chirp/chirp-regular-web.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.twitter.com/chirp/chirp-regular-italic-web.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.twitter.com/chirp/chirp-extended-bold-web.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/etc/designs/developer2-twitter/public/css/chirp.css.twhash.a.f.41e1f29c2d4295d68b05db0725781db3.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/etc/designs/developer2-twitter/public/css/legacy-colors.css.twhash.a.f.20fd26d638816cbce52d44904fc9c3c2.css" type="text/css">
+  <link rel="stylesheet" href="/etc/designs/developer2-twitter/public/css/project.css.twhash.a.f.85d4ed05185d656e31d0701edef8f361.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/etc/designs/developer2-twitter/public/css/print.css.twhash.a.f.67de1c964d9398cbf614aab841910ad6.css" media="print" type="text/css">
+ </head>
+ <body class="
+        twtr-theme--blue
+        page documentation-page
+        page--
+        
+        twtr-color-bg--white-neutral
+        
+        js-no-scroll
+        atm-light
+      " style="--theme-color: var(--blue-dark)" data-analytics-page="developer" data-analytics-section="docs" data-analytics-component="x-for-websites/timelines/guides/profile-timeline" data-analytics-element="page">
+  <div id="twtr-dtc-main" style="--nav-height: var(--navbar-tall)" data-dtc-rebrand-on="true" class="dtc-rebrand-flag-on">
+   <div id="twBearerToken" data-value="AAAAAAAAAAAAAAAAAAAAACHguwAAAAAAaSlT0G31NDEyg%2BSnBN5JuyKjMCU%3Dlhg0gv0nE7KKyiJNEAojQbn8Y3wJm1xidDK7VnKGBP4ByJwHPb" style="display:none"></div>
+   <div id="twAuthenticationFlag" data-value="guest" style="display:none"></div>
+   <div id="twGeoLocationRegion" data-value="other" style="display:none"></div>
+   <div class="u01-meganav__page-padding"></div>
+   <div class="u01-meganav  js-twtr-nav  twtr-color-bg--white-neutral  is-fixed">
+    <div class="twtr-container--wide">
+     <div class="twtr-grid">
+      <div class="twtr-col-12">
+       <div class="u01-meganav__container" data-bg-color="white-neutral" data-home-path="/content/developer-twitter/en" data-icon-close="<svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewbox=&quot;0 0 24 24&quot; style=&quot;enable-background:new 0 0 24 24;&quot; xml:space=&quot;preserve&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; role=&quot;none&quot; class=&quot;twtr-icon--md&quot;> 
+ <g> 
+  <g> 
+   <defs> 
+    <rect id=&quot;SVGID_1_&quot; x=&quot;-468&quot; y=&quot;-1360&quot; width=&quot;1440&quot; height=&quot;3027&quot; /> 
+   </defs> 
+   <clippath id=&quot;SVGID_2_&quot;> 
+    <use xlink:href=&quot;#SVGID_1_&quot; style=&quot;overflow:visible;&quot; /> 
+   </clippath> 
+  </g> 
+ </g> 
+ <rect x=&quot;-468&quot; y=&quot;-1360&quot; class=&quot;st0&quot; width=&quot;1440&quot; height=&quot;3027&quot; style=&quot;fill:rgb(0,0,0,0);stroke-width:3;stroke:rgb(0,0,0)&quot; /> 
+ <path d=&quot;M13.4,12l5.8-5.8c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L12,10.6L6.2,4.8c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4
+	l5.8,5.8l-5.8,5.8c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3l5.8-5.8l5.8,5.8c0.2,0.2,0.5,0.3,0.7,0.3
+	s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L13.4,12z&quot; /> 
+</svg>" data-icon-chevron-right="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewbox=&quot;0 0 24 24&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; role=&quot;none&quot; class=&quot;twtr-icon&quot;> 
+ <path opacity=&quot;0&quot; d=&quot;M0 0h24v24H0z&quot; /> 
+ <path d=&quot;M17.207 11.293l-7.5-7.5c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414L15.086 12l-6.793 6.793c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z&quot; /> 
+</svg>" data-icon-chevron-down="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewbox=&quot;0 0 24 24&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; role=&quot;none&quot; class=&quot;twtr-icon&quot;> 
+ <path opacity=&quot;0&quot; d=&quot;M0 0h24v24H0z&quot; /> 
+ <path d=&quot;M20.207 7.043c-.39-.39-1.023-.39-1.414 0L12 13.836 5.207 7.043c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z&quot; /> 
+</svg>" data-icon-arrow-left="<svg width=&quot;28px&quot; height=&quot;28px&quot; viewbox=&quot;0 0 28 28&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; role=&quot;none&quot; class=&quot;twtr-icon  u01-meganav__icon-arrow-left&quot;> 
+ <g stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot; stroke-linecap=&quot;round&quot;> 
+  <g transform=&quot;translate(-1216.000000, -298.000000)&quot; stroke-width=&quot;2.25&quot;> 
+   <g transform=&quot;translate(1200.000000, 282.000000)&quot;> 
+    <g transform=&quot;translate(17.000000, 17.000000)&quot;> 
+     <path d=&quot;M0.756410256,12.8589744 L25.7179487,12.8589744&quot;></path> 
+     <path d=&quot;M13.2371795,25.3397436 L25.7179487,12.8589744&quot;></path> 
+     <path d=&quot;M13.2371795,12.4807692 L25.3397436,0.378205128&quot; transform=&quot;translate(19.288462, 6.429487) rotate(-90.000000) translate(-19.288462, -6.429487) &quot;></path> 
+    </g> 
+   </g> 
+  </g> 
+ </g> 
+</svg>" data-left-nav-items="[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;X API&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;X API&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/products/twitter-api&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;X Ads API&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;X Ads API&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/products/x-ads-api&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;X for websites&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;X for websites&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/products/x-for-websites&quot;}],&quot;overviewTitle&quot;:&quot;Products&quot;,&quot;linkDisabled&quot;:true,&quot;title&quot;:&quot;Products&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/products&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Docs&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Docs&quot;,&quot;path&quot;:&quot;https://docs.x.com/&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Build for business&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Build for business&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/use-cases/build-for-businesses&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Build for the public&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Build for the public&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/use-cases/build-for-consumers&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Do research&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Do research&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/use-cases/do-research&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Teach \u0026 learn&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Teach \u0026 learn&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/use-cases/teach-and-learn&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Build for good&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Build for good&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/use-cases/build-for-good&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Build for fun&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Build for fun&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/use-cases/build-for-fun&quot;}],&quot;overviewTitle&quot;:&quot;Use Cases&quot;,&quot;linkDisabled&quot;:true,&quot;title&quot;:&quot;Use Cases&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/navigation/left-nav-items/use-cases&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Changelog&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Changelog&quot;,&quot;path&quot;:&quot;https://docs.x.com/updates/changelog&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Blog&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Blog&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/blog&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Newsletter&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Newsletter&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/updates/stay-informed&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;YouTube&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;YouTube&quot;,&quot;path&quot;:&quot;https://www.youtube.com/c/twitterdev&quot;}],&quot;linkDisabled&quot;:true,&quot;title&quot;:&quot;Stay informed&quot;,&quot;path&quot;:&quot;https://developer.x.com/&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Forums&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Forums&quot;,&quot;path&quot;:&quot;https://twittercommunity.com/&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Events&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Events&quot;,&quot;path&quot;:&quot;https://twitterdev.bevylabs.com/&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Insiders&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Insiders&quot;,&quot;path&quot;:&quot;https://developer.twitter.com/en/community/insiders&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Community leaders&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Community leaders&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/community/leaders&quot;}],&quot;linkDisabled&quot;:true,&quot;title&quot;:&quot;Connect&quot;,&quot;path&quot;:&quot;https://developer.x.com/&quot;}],&quot;overviewTitle&quot;:&quot;Community&quot;,&quot;linkDisabled&quot;:false,&quot;menuType&quot;:&quot;multiCategory&quot;,&quot;title&quot;:&quot;Community&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/community&quot;}]" data-right-nav-items="[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Policies&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Policies&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/developer-terms&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Developer agreement&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Developer agreement&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/developer-terms/agreement-and-policy/source&quot;}],&quot;overviewTitle&quot;:&quot;Support&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Support&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/support&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Developer Portal&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Developer Portal&quot;,&quot;path&quot;:&quot;https://developer.twitter.com/en/portal/petition/essential/basic-info&quot;}]" data-cta-enabled="true" data-profile-enabled="true" data-cta-link-new-tab="false" data-root-page-title="Developer Platform">
+       </div>
+       <div aria-label="Search" class="u01-meganav__search-modal twtr-color-bg--blue-dark" role="dialog" aria-modal="true">
+        <button aria-label="Close search menu" class="u04-search__close-button js-close-search" type="button">
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" aria-hidden="true" focusable="false" role="none" class="u04-search__close-svg  twtr-icon">
+          <g>
+           <g>
+            <defs>
+             <rect id="SVGID_1_" x="-468" y="-1360" width="1440" height="3027" />
+            </defs>
+            <clippath id="SVGID_2_">
+             <use xlink:href="#SVGID_1_" style="overflow:visible;" />
+            </clippath>
+           </g>
+          </g> <rect x="-468" y="-1360" class="st0" width="1440" height="3027" style="fill:rgb(0,0,0,0);stroke-width:3;stroke:rgb(0,0,0)" /> <path d="M13.4,12l5.8-5.8c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L12,10.6L6.2,4.8c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4
+	l5.8,5.8l-5.8,5.8c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3l5.8-5.8l5.8,5.8c0.2,0.2,0.5,0.3,0.7,0.3
+	s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L13.4,12z" />
+         </svg></button>
+        <div class="search-bar search-bar--js" data-theme="blue" data-search-path="https://developer.x.com/en/search-results.html">
+         <input placeholder="Type your search here" type="search" autocomplete="off" class="search-bar__input" name="q">
+         <button id="u04-search__button" class="u04-search__button" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" aria-hidden="true" focusable="false" role="none" class="u04-search__button-icon twtr-icon--mega  twtr-color-fill--white-neutral">
+           <path opacity="0" d="M0 0h24v24H0z" /> <path d="M22.06 19.94l-3.73-3.73C19.38 14.737 20 12.942 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c1.943 0 3.738-.622 5.21-1.67l3.73 3.73c.292.294.676.44 1.06.44s.768-.146 1.06-.44c.586-.585.586-1.535 0-2.12zM11 17c-3.308 0-6-2.692-6-6s2.692-6 6-6 6 2.692 6 6-2.692 6-6 6z" />
+          </svg></button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <main class="twtr-color-bg--white-neutral" id="twtr-main">
+    <div class="page-wrapper  documentation-page  twtr-color-bg--white-neutral">
+     <div class="u07  is-hidden" aria-hidden="true">
+      <div class="u07__item  u07__bg-color--neutral">
+       <div class="u07__item-content">
+        <div class="u07__notification  twtr-type--bold-200  chirp--bold-200  twtr-color--gray-900">
+        </div>
+        <div class="u07__close">
+         <button type="button" class="u07__close-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="72" viewbox="0 0 46 72" aria-hidden="true" focusable="false" role="none" class="twtr-icon">
+           <path d="M27.243 36l14.879-14.879a2.998 2.998 0 0 0 0-4.242 2.998 2.998 0 0 0-4.242 0L23 31.758 8.122 16.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242L18.758 36 3.879 50.879A2.998 2.998 0 0 0 6.001 56a2.99 2.99 0 0 0 2.121-.879L23 40.242l14.879 14.879A2.991 2.991 0 0 0 40 56a2.998 2.998 0 0 0 2.121-5.121L27.243 36z" />
+          </svg></button>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="page-content  twtr-container-wide  left-rail-container">
+      <div class="sidebar-content  docs-side-nav">
+       <div class="sidebar-content__wrapper">
+        <span class="docs-side-nav__close">
+         <svg xmlns="http://www.w3.org/2000/svg" width="46" height="72" viewBox="0 0 46 72" aria-hidden="true" focusable="false">
+          <path d="M27.243 36l14.879-14.879a2.998 2.998 0 0 0 0-4.242 2.998 2.998 0 0 0-4.242 0L23 31.758 8.122 16.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242L18.758 36 3.879 50.879A2.998 2.998 0 0 0 6.001 56a2.99 2.99 0 0 0 2.121-.879L23 40.242l14.879 14.879A2.991 2.991 0 0 0 40 56a2.998 2.998 0 0 0 2.121-5.121L27.243 36z">
+          </path>
+         </svg></span>
+        <div class="d08-navigation-sidebar" data-sidenav-json="{&quot;navigationTitle&quot;:&quot;Documentation&quot;,&quot;rootPageUrl&quot;:&quot;/content/developer-twitter/en/docs.html&quot;,&quot;navigationGroups&quot;:[{&quot;groupName&quot;:&quot;&quot;,&quot;navItems&quot;:[{&quot;title&quot;:&quot;Getting started&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/platform-overview&quot;},{&quot;childNavItems&quot;:[{&quot;title&quot;:&quot;Developer Apps&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/apps&quot;},{&quot;title&quot;:&quot;Projects&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/projects&quot;},{&quot;title&quot;:&quot;Developer portal&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/developer-portal&quot;},{&quot;title&quot;:&quot;Authentication&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/authentication&quot;},{&quot;title&quot;:&quot;Counting characters&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/counting-characters&quot;},{&quot;title&quot;:&quot;Rate limits&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/rate-limits&quot;},{&quot;title&quot;:&quot;X IDs&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ids&quot;},{&quot;title&quot;:&quot;Security&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/security&quot;}],&quot;title&quot;:&quot;Fundamentals&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;title&quot;:&quot;Tools and libraries&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/tools-and-libraries&quot;},{&quot;title&quot;:&quot;Tutorials&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/tutorials&quot;},{&quot;title&quot;:&quot;API reference index&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/api-reference-index&quot;}],&quot;groupUrl&quot;:&quot;#&quot;},{&quot;groupName&quot;:&quot;X API&quot;,&quot;navItems&quot;:[{&quot;childNavItems&quot;:[{&quot;title&quot;:&quot;About the X API&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/getting-started/about-x-api&quot;},{&quot;title&quot;:&quot;Getting access&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/getting-started/getting-access-to-the-x-api&quot;},{&quot;title&quot;:&quot;Make your first request&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/getting-started/make-your-first-request&quot;},{&quot;title&quot;:&quot;Important resources&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/getting-started/important-resources&quot;}],&quot;title&quot;:&quot;Getting started&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;childNavItems&quot;:[{&quot;title&quot;:&quot;SDKs&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tools-and-libraries/sdks&quot;}],&quot;title&quot;:&quot;Tools and libraries&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tools-and-libraries&quot;},{&quot;title&quot;:&quot;What to build&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/what-to-build&quot;},{&quot;childNavItems&quot;:[{&quot;title&quot;:&quot;Overview&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/migrate/overview&quot;},{&quot;title&quot;:&quot;Data format migration&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/migrate/data-formats&quot;},{&quot;title&quot;:&quot;X API endpoint map&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/migrate/x-api-endpoint-map&quot;}],&quot;title&quot;:&quot;Migrate&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/migrate&quot;},{&quot;childNavItems&quot;:[{&quot;grandChildNavItems&quot;:[{&quot;title&quot;:&quot;Data dictionary&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/data-dictionary&quot;},{&quot;title&quot;:&quot;Fields&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/fields&quot;},{&quot;title&quot;:&quot;Expansions&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/expansions&quot;},{&quot;title&quot;:&quot;Tweet annotations&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/annotations&quot;},{&quot;title&quot;:&quot;Metrics&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/metrics&quot;},{&quot;title&quot;:&quot;Conversation ID&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/conversation-id&quot;},{&quot;title&quot;:&quot;Pagination&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/pagination&quot;},{&quot;title&quot;:&quot;Versioning&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/versioning&quot;},{&quot;title&quot;:&quot;Consistency&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/consistency&quot;},{&quot;title&quot;:&quot;Rate limits&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/rate-limits&quot;},{&quot;title&quot;:&quot;Tweet cap&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tweet-caps&quot;},{&quot;title&quot;:&quot;Edit Tweets&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/edit-tweets&quot;}],&quot;title&quot;:&quot;Fundamentals&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;grandChildNavItems&quot;:[{&quot;title&quot;:&quot;Tweets lookup&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tweets/lookup&quot;},{&quot;title&quot;:&quot;Manage Tweets&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tweets/manage-tweets&quot;},{&quot;title&quot;:&quot;Timelines&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tweets/timelines&quot;},{&quot;title&quot;:&quot;Search Tweets&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tweets/search&quot;},{&quot;title&quot;:&quot;Tweet counts&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tweets/counts&quot;},{&quot;title&quot;:&quot;Filtered stream&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tweets/filtered-stream&quot;},{&quot;title&quot;:&quot;Volume streams&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tweets/volume-streams&quot;},{&quot;title&quot;:&quot;Retweets&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tweets/retweets&quot;},{&quot;title&quot;:&quot;Quote Tweets&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tweets/quote-tweets&quot;},{&quot;title&quot;:&quot;Likes&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tweets/likes&quot;},{&quot;title&quot;:&quot;Bookmarks&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tweets/bookmarks&quot;},{&quot;title&quot;:&quot;Hide replies&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/tweets/hide-replies&quot;}],&quot;title&quot;:&quot;Tweets&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;grandChildNavItems&quot;:[{&quot;title&quot;:&quot;Users lookup&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/users/lookup&quot;},{&quot;title&quot;:&quot;Follows&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/users/follows&quot;},{&quot;title&quot;:&quot;Blocks&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/users/blocks&quot;},{&quot;title&quot;:&quot;Mutes&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/users/mutes&quot;},{&quot;title&quot;:&quot;Search&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/users/search&quot;},{&quot;title&quot;:&quot;Personalized Trends&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/users/personalized-trends&quot;}],&quot;title&quot;:&quot;Users&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;grandChildNavItems&quot;:[{&quot;title&quot;:&quot;Tweets&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/usage/tweets&quot;}],&quot;title&quot;:&quot;Usage&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;title&quot;:&quot;Trends&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/trends&quot;},{&quot;grandChildNavItems&quot;:[{&quot;title&quot;:&quot;Overview&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/spaces/overview&quot;},{&quot;title&quot;:&quot;Spaces lookup&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/spaces/lookup&quot;},{&quot;title&quot;:&quot;Search Spaces&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/spaces/search&quot;}],&quot;title&quot;:&quot;Spaces&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;grandChildNavItems&quot;:[{&quot;title&quot;:&quot;Direct Messages lookup&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/direct-messages/lookup&quot;},{&quot;title&quot;:&quot;Manage Direct Messages&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/direct-messages/manage&quot;},{&quot;title&quot;:&quot;Direct Message blocks&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/direct-messages/blocks&quot;}],&quot;title&quot;:&quot;Direct Messages&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;grandChildNavItems&quot;:[{&quot;title&quot;:&quot;Lists lookup&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/lists/list-lookup&quot;},{&quot;title&quot;:&quot;Manage lists&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/lists/manage-lists&quot;},{&quot;title&quot;:&quot;List Tweets lookup&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/lists/list-tweets&quot;},{&quot;title&quot;:&quot;List members&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/lists/list-members&quot;},{&quot;title&quot;:&quot;Pinned Lists&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/lists/pinned-lists&quot;}],&quot;title&quot;:&quot;Lists&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;grandChildNavItems&quot;:[{&quot;title&quot;:&quot;Communities lookup&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/communities/lookup&quot;},{&quot;title&quot;:&quot;Search Communities&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/communities/search&quot;}],&quot;title&quot;:&quot;Communities&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;grandChildNavItems&quot;:[{&quot;title&quot;:&quot;Batch compliance&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/compliance/batch-compliance/&quot;},{&quot;title&quot;:&quot;Compliance streams&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/compliance/streams/&quot;}],&quot;title&quot;:&quot;Compliance&quot;,&quot;url&quot;:&quot;#&quot;}],&quot;title&quot;:&quot;X API v2&quot;,&quot;url&quot;:&quot;&quot;},{&quot;childNavItems&quot;:[{&quot;grandChildNavItems&quot;:[{&quot;title&quot;:&quot;Gnip Console&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/enterprise/console&quot;},{&quot;title&quot;:&quot;Data dictionary&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/enterprise/data-dictionary&quot;},{&quot;title&quot;:&quot;Data enrichments&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/enterprise/enrichments&quot;},{&quot;title&quot;:&quot;Rules and filtering&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/enterprise/rules-and-filtering&quot;},{&quot;title&quot;:&quot;Rate limits&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/enterprise/rate-limits&quot;},{&quot;title&quot;:&quot;Edit Tweets&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/enterprise/edit-tweets&quot;}],&quot;title&quot;:&quot;Fundamentals&quot;,&quot;url&quot;:&quot;#&quot;},{&quot;title&quot;:&quot;PowerTrack API&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/enterprise/powertrack-api&quot;},{&quot;title&quot;:&quot;Decahose API&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/enterprise/decahose-api&quot;},{&quot;title&quot;:&quot;Account Activity API&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/enterprise/account-activity-api&quot;},{&quot;title&quot;:&quot;Search API&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/enterprise/search-api&quot;},{&quot;title&quot;:&quot;Engagement API&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/enterprise/engagement-api&quot;},{&quot;title&quot;:&quot;Compliance Firehose API&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/enterprise/compliance-firehose-api&quot;},{&quot;title&quot;:&quot;Usage API&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/enterprise/usage-api&quot;}],&quot;calloutLabel&quot;:&quot;Gnip 2.0&quot;,&quot;title&quot;:&quot;Enterprise - Gnip 2.0&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-api/enterprise&quot;}],&quot;groupUrl&quot;:&quot;/content/developer-twitter/en/docs/x-api&quot;},{&quot;groupName&quot;:&quot;X Ads API&quot;,&quot;navItems&quot;:[{&quot;childNavItems&quot;:[{&quot;title&quot;:&quot;Step by step guide&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/getting-started&quot;},{&quot;title&quot;:&quot;Increasing access&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/increasing-access&quot;},{&quot;title&quot;:&quot;Subscribe for updates&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/newsletter&quot;}],&quot;title&quot;:&quot;Getting started&quot;,&quot;url&quot;:&quot;&quot;},{&quot;childNavItems&quot;:[{&quot;title&quot;:&quot;Hierarchy and terminology&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/hierarchy-terminology&quot;},{&quot;title&quot;:&quot;Accessing Ads accounts&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/obtaining-ads-account-access&quot;},{&quot;title&quot;:&quot;Making authenticated requests&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/making-authenticated-requests&quot;},{&quot;title&quot;:&quot;Error codes and responses&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/response-codes&quot;},{&quot;title&quot;:&quot;Rate limiting&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/rate-limiting&quot;},{&quot;title&quot;:&quot;Pagination&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/pagination&quot;},{&quot;title&quot;:&quot;Sorting&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/sorting&quot;},{&quot;title&quot;:&quot;Versioning&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/versioning&quot;},{&quot;title&quot;:&quot;Timezones&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/timezones&quot;},{&quot;title&quot;:&quot;Currency&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/currency&quot;},{&quot;title&quot;:&quot;Sandbox&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/ads-api-sandbox&quot;}],&quot;title&quot;:&quot;Fundamentals&quot;,&quot;url&quot;:&quot;&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;Tools and libraries&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/tools-and-libraries&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;Analytics&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/analytics&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;Audiences&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/audiences&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;Campaign management&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/campaign-management&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;Catalog management&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/catalog-management&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;Creatives&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/creatives&quot;},{&quot;childNavItems&quot;:[{&quot;title&quot;:&quot;Mobile Conversions&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/measurement/mobile-conversions/overview&quot;},{&quot;title&quot;:&quot;Web Conversions&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/measurement/web-conversions/overview&quot;},{&quot;title&quot;:&quot;AB testing&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api/measurement/ab-testing/overview&quot;}],&quot;title&quot;:&quot;Measurement&quot;,&quot;url&quot;:&quot;&quot;}],&quot;groupUrl&quot;:&quot;/content/developer-twitter/en/docs/x-ads-api&quot;},{&quot;groupName&quot;:&quot;X for Websites&quot;,&quot;navItems&quot;:[{&quot;childNavItems&quot;:[{&quot;title&quot;:&quot;Webpage properties&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/webpage-properties&quot;},{&quot;title&quot;:&quot;Javascript API&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/javascript-api&quot;},{&quot;title&quot;:&quot;Supported languages and browsers&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/supported-languages&quot;},{&quot;title&quot;:&quot;Privacy&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/privacy&quot;}],&quot;title&quot;:&quot;Fundamentals&quot;,&quot;url&quot;:&quot;&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;Tools and libraries&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/tools-and-libraries&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;Embedded Tweets&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/embedded-tweets&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;Embedded timelines&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/timelines&quot;},{&quot;childNavItems&quot;:[{&quot;title&quot;:&quot;Tweets&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/tweet-button&quot;},{&quot;title&quot;:&quot;Follow&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/follow-button&quot;},{&quot;title&quot;:&quot;Direct Message&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/direct-message-button&quot;}],&quot;title&quot;:&quot;Embedded buttons&quot;,&quot;url&quot;:&quot;&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;Web intents&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/web-intents&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;oEmbed API&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/oembed-api&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;Log in with X&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/log-in-with-twitter&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;Optimize Tweets with X Cards&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/cards&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;Publish faster articles with AMP&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/amp&quot;},{&quot;childNavItems&quot;:[],&quot;title&quot;:&quot;Integrate X with your CMS&quot;,&quot;url&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites/cms&quot;}],&quot;groupUrl&quot;:&quot;/content/developer-twitter/en/docs/x-for-websites&quot;}]}" data-search-path="https://developer.x.com/en/search-results.html" data-side-nav-v2="true">
+        </div>
+       </div>
+      </div>
+      <div class="main-content  twtr-col-lg-6">
+       <div class="main-content__wrapper">
+        <div class="dtc-docs__header  main-content__header">
+         <span id="dtc-docs__header-title" class="dtc-docs__header-title  chirp--bold-700  twtr-color--gray-900">Profile timeline</span>
+        </div>
+        <div class="c01-rich-text-editor">
+         <div class="is-table-default">
+          <h2>Embedded profiles</h2>
+          <p>A profile timeline displays the latest Tweets ordered from newest to oldest from a specific public Twitter account.<br></p>
+         </div>
+        </div>
+        <div class="d07-raw-html">
+         <div class="d07">
+          <a class="twitter-timeline" data-width="350" data-height="600" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" nonce="sP/WkYBGyG6WqRric7AIUkwn"></script>
+         </div>
+        </div>
+        <div class="b27-spacing">
+         <div class="b27 ">
+         </div>
+        </div>
+        <div class="c01-rich-text-editor">
+         <div class="is-table-default">
+          <h3>HTML markup</h3>
+          <p>A responsive profile timeline can be added to a webpage through a common HTML template.&nbsp;Generate markup for an embedded profile timeline on&nbsp;<a title="publish.twitter.com" href="https://publish.twitter.com/">publish.twitter.com</a>.</p>
+          <p>A template example:</p>
+         </div>
+        </div>
+        <div class="b19-code-snippet twtr-component-space--md">
+         <div class="b19-snippet  b19__theme--light">
+          <!--Rendering snippet component with tabs--> <!--Rendering snippet component single code--> <!--To support legacy mode(initial version) of snippet component-->
+          <div class="t05-inline-code-snippet  ">
+           <!--line-numbers and language are prismjs classes, these classes are used to render line numbers and code properly-->
+           <pre class="line-numbers     ">      <code tabindex="0" class="t05__copy  language-bash">&lt;a class="twitter-timeline"
+  href="https://twitter.com/{screen_name}"&gt;
+Tweets by @{screen_name}
+&lt;/a&gt;</code>
+    </pre>
+          </div>
+         </div>
+        </div>
+        <div class="b19-code-snippet twtr-component-space--md">
+         <div class="b19-snippet  b19__theme--light">
+          <!--Rendering snippet component with tabs--> <!--Rendering snippet component single code--> <!--To support legacy mode(initial version) of snippet component-->
+          <div class="t05-inline-code-snippet  ">
+           <!--line-numbers and language are prismjs classes, these classes are used to render line numbers and code properly-->
+           <pre class="line-numbers     ">      <code tabindex="0" class="t05__copy  language-bash">&lt;a class="twitter-timeline"
+  href="https://twitter.com/twitterdev"&gt;
+Tweets by @TwitterDev
+&lt;/a&gt;</code>
+    </pre>
+          </div>
+         </div>
+        </div>
+        <div class="c01-rich-text-editor">
+         <div class="is-table-default">
+          <h3>JavaScript factory function</h3>
+          <p>Twitter’s widget JavaScript library supports dynamic insertion of an embedded profile timeline using the&nbsp;<span class="code-inline">twttr.widgets.createTimeline</span>&nbsp;function. Pass a data source definition, target container element, and optional options object to insert an embedded timeline into your page.</p>
+          <p>HTML&nbsp;<span class="code-inline">data-*</span>&nbsp;parameters are camelCased when passed as an options object property.</p>
+         </div>
+        </div>
+        <div class="b19-code-snippet twtr-component-space--md">
+         <div class="b19-snippet  b19__theme--light">
+          <!--Rendering snippet component with tabs--> <!--Rendering snippet component single code--> <!--To support legacy mode(initial version) of snippet component-->
+          <div class="t05-inline-code-snippet  ">
+           <!--line-numbers and language are prismjs classes, these classes are used to render line numbers and code properly-->
+           <pre class="line-numbers     ">      <code tabindex="0" class="t05__copy  language-bash">twttr.widgets.createTimeline(
+  {
+    sourceType: "profile",
+    screenName: "TwitterDev"
+  },
+  document.getElementById("container")
+);</code>
+    </pre>
+          </div>
+         </div>
+        </div>
+        <div id="twtr-article-embedded-survey" class="b32"></div>
+       </div>
+      </div>
+      <div class="sidebar-content  docs-right-side-nav  twtr-col-lg-3">
+       <div class="dtc05-navigation-right" data-tab-title="Timelines" data-header-title="Timelines" data-tab-root-page="/content/developer-twitter/en/docs/x-for-websites/timelines" data-sidenav-json="[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Overview&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Overview&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/docs/x-for-websites/timelines/overview&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:true,&quot;children&quot;:[{&quot;isActive&quot;:true,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Profile Timeline&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Profile Timeline&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/docs/x-for-websites/timelines/guides/profile-timeline&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;List Timeline&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;List Timeline&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/docs/x-for-websites/timelines/guides/list-timeline&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Parameter reference&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Parameter reference&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/docs/x-for-websites/timelines/guides/parameter-reference&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;oEmbed API&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;oEmbed API&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/docs/x-for-websites/timelines/guides/oembed-api&quot;}],&quot;overviewTitle&quot;:&quot;Guides&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Guides&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/docs/x-for-websites/timelines/guides&quot;}]" data-icon-chevron-down="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewbox=&quot;0 0 24 24&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; role=&quot;none&quot; class=&quot;twtr-icon&quot;> 
+ <path opacity=&quot;0&quot; d=&quot;M0 0h24v24H0z&quot; /> 
+ <path d=&quot;M20.207 7.043c-.39-.39-1.023-.39-1.414 0L12 13.836 5.207 7.043c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z&quot; /> 
+</svg>">
+       </div>
+      </div>
+     </div>
+    </div>
+   </main>
+   <div>
+    <footer class="u02fs  twtr-background--blue-extra-light  twtr-background--gray-0">
+     <div class="twtr-container">
+      <div class="twtr-grid">
+       <div class="u02fs__footer-link-col  twtr-col-12  twtr-col-md-4">
+        <a href="https://developer.x.com/en/more/developer-terms/agreement-and-policy" title="Developer policy and terms" target="_blank" class="u02fs__footer-link  twtr-type--roman-50  twtr-color--gray-900"> Developer policy and terms </a>
+       </div>
+       <div class="u02fs__footer-link-col  twtr-col-12  twtr-col-md-4">
+        <a href="http://x.com/xdevelopers" title="Follow @XDevelopers" target="_blank" class="u02fs__footer-link  twtr-type--roman-50  twtr-color--gray-900"> Follow @XDevelopers </a>
+       </div>
+       <div class="u02fs__footer-link-col  twtr-col-12  twtr-col-md-4  u02fs__subscribe-button-col">
+        <a class="b03__button
+      twtr-btn
+      twtr-btn--secondary
+      twtr-btn--size-default
+      twtr-btn-color--secondary-blue
+      u02fs__button
+      twtr-btn__icon--
+      twtr-scribe-clicks" href="/en/twitterdev-news-subscription" rel="noopener noreferrer" target="_blank" data-twtr-scribe-section="b03-button" data-twtr-scribe-element="OOYC" data-twtr-scribe-component="subscribe-to-developer-news" data-text="Subscribe to developer news"> <!--/* Button text --> Subscribe to developer news </a>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+   <div>
+    <footer class="u02 twtr-color-bg--black-neutral">
+     <div class="twtr-container">
+      <div class="u02__wrapper">
+       <div class="u02__row  u02__network-map">
+        <div class="twtr-grid  u02__twtr-grid">
+         <div class="js-accordion  u02__column">
+          <h4 class="u02__column__parent  twtr-type--bold-14  twtr-color--gray-0 is-opaque">X platform <span class="u02__icon  twtr-dtc-fill--extra-light-gray  twtr-hidden--md  twtr-hidden--lg  twtr-hidden--xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="9.5" viewbox="0 0 17 9.5" aria-hidden="true" focusable="false" role="none" class="twtr-icon--sm">
+             <path d="M16.707.293c-.39-.39-1.023-.39-1.414 0L8.5 7.086 1.707.293c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+            </svg></span></h4>
+          <ul class="u02__column__list">
+           <li class="u02__link-item"><a href="https://x.com/" title="X.com" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> X.com </a></li>
+           <li class="u02__link-item"><a href="https://docs.x.com/status" title="Status" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Status </a></li>
+           <li class="u02__link-item"><a href="https://help.x.com/resources/accessibility" title="Accessibility" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Accessibility </a></li>
+           <li class="u02__link-item"><a href="https://publish.x.com" title="Embed a post" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Embed a post </a></li>
+           <li class="u02__link-item"><a href="https://privacy.x.com/" title="Privacy Center" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Privacy Center </a></li>
+           <li class="u02__link-item"><a href="https://transparency.x.com/" title="Transparency Center" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Transparency Center </a></li>
+           <li class="u02__link-item"><a href="https://help.x.com/using-x/download-the-x-app" title="Download the X app" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Download the X app </a></li>
+           <li class="u02__link-item"><a href="https://grok.com" title="Try Grok.com" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Try Grok.com </a></li>
+          </ul>
+         </div>
+         <div class="js-accordion  u02__column">
+          <h4 class="u02__column__parent  twtr-type--bold-14  twtr-color--gray-0 is-opaque">X Corp. <span class="u02__icon  twtr-dtc-fill--extra-light-gray  twtr-hidden--md  twtr-hidden--lg  twtr-hidden--xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="9.5" viewbox="0 0 17 9.5" aria-hidden="true" focusable="false" role="none" class="twtr-icon--sm">
+             <path d="M16.707.293c-.39-.39-1.023-.39-1.414 0L8.5 7.086 1.707.293c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+            </svg></span></h4>
+          <ul class="u02__column__list">
+           <li class="u02__link-item"><a href="https://about.x.com/en" title="About the company" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> About the company </a></li>
+           <li class="u02__link-item"><a href="https://blog.x.com/" title="Company news" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Company news </a></li>
+           <li class="u02__link-item"><a href="https://about.x.com/en/who-we-are/brand-toolkit.html" title="Brand toolkit" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Brand toolkit </a></li>
+           <li class="u02__link-item"><a href="https://careers.x.com/" title="Jobs and internships" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Jobs and internships </a></li>
+           <li class="u02__link-item"><a href="https://investor.twitterinc.com/" title="Investors" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Investors </a></li>
+          </ul>
+         </div>
+         <div class="js-accordion  u02__column">
+          <h4 class="u02__column__parent  twtr-type--bold-14  twtr-color--gray-0 is-opaque">Help <span class="u02__icon  twtr-dtc-fill--extra-light-gray  twtr-hidden--md  twtr-hidden--lg  twtr-hidden--xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="9.5" viewbox="0 0 17 9.5" aria-hidden="true" focusable="false" role="none" class="twtr-icon--sm">
+             <path d="M16.707.293c-.39-.39-1.023-.39-1.414 0L8.5 7.086 1.707.293c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+            </svg></span></h4>
+          <ul class="u02__column__list">
+           <li class="u02__link-item"><a href="https://help.x.com/" title="Help Center" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Help Center </a></li>
+           <li class="u02__link-item"><a href="https://help.x.com/en/using-twitter" title="Using X" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Using X </a></li>
+           <li class="u02__link-item"><a href="https://create.x.com/" title="X for creators" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> X for creators </a></li>
+           <li class="u02__link-item"><a href="https://business.x.com/en/help.html" title="Ads Help Center" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Ads Help Center </a></li>
+           <li class="u02__link-item"><a href="https://help.x.com/en/managing-your-account" title="Managing your account" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Managing your account </a></li>
+           <li class="u02__link-item"><a href="https://preferencecenter.x.com/" title="Email Preference Center" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Email Preference Center </a></li>
+           <li class="u02__link-item"><a href="https://help.x.com/en/rules-and-policies" title="Rules and policies" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Rules and policies </a></li>
+           <li class="u02__link-item"><a href="https://help.x.com/en/forms" title="Contact us" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Contact us </a></li>
+          </ul>
+         </div>
+         <div class="js-accordion  u02__column">
+          <h4 class="u02__column__parent  twtr-type--bold-14  twtr-color--gray-0 is-opaque">Developer resources <span class="u02__icon  twtr-dtc-fill--extra-light-gray  twtr-hidden--md  twtr-hidden--lg  twtr-hidden--xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="9.5" viewbox="0 0 17 9.5" aria-hidden="true" focusable="false" role="none" class="twtr-icon--sm">
+             <path d="M16.707.293c-.39-.39-1.023-.39-1.414 0L8.5 7.086 1.707.293c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+            </svg></span></h4>
+          <ul class="u02__column__list">
+           <li class="u02__link-item"><a href="https://developer.x.com/en" title="Developer home" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Developer home </a></li>
+           <li class="u02__link-item"><a href="https://developer.x.com/en/docs" title="Documentation" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Documentation </a></li>
+           <li class="u02__link-item"><a href="https://twittercommunity.com/" title="Forums" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Forums </a></li>
+           <li class="u02__link-item"><a href="https://developer.x.com/en/community" title="Communities" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Communities </a></li>
+           <li class="u02__link-item"><a href="https://blog.x.com/developer/" title="Developer blog" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Developer blog </a></li>
+           <li class="u02__link-item"><a href="https://blog.x.com/engineering/en_us.html" title="Engineering blog" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Engineering blog </a></li>
+           <li class="u02__link-item"><a href="https://developer.x.com/en/more/developer-terms" title="Developer terms" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Developer terms </a></li>
+          </ul>
+         </div>
+         <div class="js-accordion  u02__column">
+          <h4 class="u02__column__parent  twtr-type--bold-14  twtr-color--gray-0 is-opaque">Business resources <span class="u02__icon  twtr-dtc-fill--extra-light-gray  twtr-hidden--md  twtr-hidden--lg  twtr-hidden--xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="9.5" viewbox="0 0 17 9.5" aria-hidden="true" focusable="false" role="none" class="twtr-icon--sm">
+             <path d="M16.707.293c-.39-.39-1.023-.39-1.414 0L8.5 7.086 1.707.293c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+            </svg></span></h4>
+          <ul class="u02__column__list">
+           <li class="u02__link-item"><a href="https://business.x.com/en/advertising.html" title="Advertise" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Advertise </a></li>
+           <li class="u02__link-item"><a href="https://business.x.com/" title="X for business" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> X for business </a></li>
+           <li class="u02__link-item"><a href="https://business.x.com/en/resources.html" title="Resources and guides" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Resources and guides </a></li>
+           <li class="u02__link-item"><a href="https://marketing.x.com/" title="X for marketers" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> X for marketers </a></li>
+           <li class="u02__link-item"><a href="https://marketing.x.com/en/insights" title="Marketing insights" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Marketing insights </a></li>
+           <li class="u02__link-item"><a href="https://marketing.x.com/en/success-stories" title="Brand inspiration" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Brand inspiration </a></li>
+           <li class="u02__link-item"><a href="https://www.xadsacademy.com/sl/5c3e29ed" title="X Ads Academy" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> X Ads Academy </a></li>
+          </ul>
+         </div>
+        </div>
+       </div>
+       <div class="u02__row  u02__legal  twtr-spacing--pt-500">
+        <div class="twtr-grid  u02__twtr-grid">
+         <div class="u02__column  u02__column--bottom">
+          <span class="u02__column-footnote  twtr-type--roman-14  twtr-color--gray-0  is-opaque"> © 2025 X Corp. </span>
+         </div>
+         <div class="u02__column  u02__column--bottom">
+          <a href="https://help.x.com/rules-and-policies/twitter-cookies" title="Cookies" target="_blank" class="u02__column-footnote  twtr-type--roman-14  twtr-color--gray-0  is-opaque has-hover"> Cookies </a>
+         </div>
+         <div class="u02__column  u02__column--bottom">
+          <a href="https://x.com/privacy" title="Privacy" target="_blank" class="u02__column-footnote  twtr-type--roman-14  twtr-color--gray-0  is-opaque has-hover"> Privacy </a>
+         </div>
+         <div class="u02__column  u02__column--bottom">
+          <a href="https://x.com/tos" title="Terms and conditions" target="_blank" class="u02__column-footnote  twtr-type--roman-14  twtr-color--gray-0  is-opaque has-hover"> Terms and conditions </a>
+         </div>
+         <div class="u02__column  u02__column--bottom  u08__language-selector">
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+   <script async src="https://platform.twitter.com/widgets.js" nonce="sP/WkYBGyG6WqRric7AIUkwn"></script>
+   <div id="page-props" data-page-title="Profile Timeline" data-page-path="/content/developer-twitter/en/docs/x-for-websites/timelines/guides/profile-timeline">
+   </div>
+   <script type="text/javascript" src="/etc/designs/developer2-twitter/public/js/core.js.twhash.a.f.640343f62c7791a30f7733c8663062c1.js" nonce="sP/WkYBGyG6WqRric7AIUkwn"></script>
+   <script type="text/javascript" src="/etc/designs/developer2-twitter/public/js/project.js.twhash.a.f.fe1d0e9f68759f28e56c1ba89d2bc918.js" nonce="sP/WkYBGyG6WqRric7AIUkwn"></script>
+   <script src="/etc/designs/developer-twitter/clientlib-twtr-profile-adapter.min.twhash.a.cl.c3b119a4cc2249caed364b89790624a4.js" nonce="sP/WkYBGyG6WqRric7AIUkwn"></script>
+   <div id="u12" class="u12-data-protection-notice">
+    <div class="u12-data-protection-notice__item  u12-data-protection-notice__item--b is-hidden">
+     <div class="u12b-opt-in" id="u12b" data-cname="twtr_pixel_opt_in">
+      <div class="u12b-opt-in__item  u12-data-protection-notice__notice">
+       <div class="u12b-opt-in__content">
+        <div class="u12b-opt-in__copy">
+         <p class="mtc-font  twtr-font"><b>Did someone say … cookies?</b><br><br>
+           X and its partners use cookies to provide you with a better, safer and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly. <a href="https://help.twitter.com/rules-and-policies/twitter-cookies" target="_blank">Show more about your choices</a>.</p>
+        </div>
+        <div class="u12b-opt-in__choice twtr-scribe-clicks-within">
+         <ul class="u12b-opt-in__choice-list">
+          <li class="u12b-opt-in__choice-list-item">
+           <button class="u12b-opt-in__button  is-blue  u12b-opt-in__button--accept  mtc-font  twtr-font  js-accept twtr-scribe-clicks" data-twtr-scribe-section="u12-data-protection-notice" data-twtr-scribe-element="FFCM" data-twtr-scribe-component="data-protection-notice">Accept all cookies</button></li>
+          <li class="u12b-opt-in__choice-list-item">
+           <button class="u12b-opt-in__button  is-naked  u12b-opt-in__button--decline  mtc-font  twtr-font  js-decline twtr-scribe-clicks" data-twtr-scribe-section="u12-data-protection-notice" data-twtr-scribe-element="FFCM" data-twtr-scribe-component="data-protection-notice">Refuse non-essential cookies</button></li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="gtag" data-gtag-csv="G-RJGMY4G45L"></div>
+   <link rel="stylesheet" href="/etc/designs/common-twitter/clientlib-u12-data-protection-notice.min.twhash.a.cl.d988235e0e7b56cd6b162c18f191822b.css" type="text/css">
+   <script src="/etc/designs/common-twitter/clientlib-u12-data-protection-notice.min.twhash.a.cl.4c1430920878101111a49a7b91b4e149.js" nonce="sP/WkYBGyG6WqRric7AIUkwn"></script>
+  </div>
+ </body>
+</html>

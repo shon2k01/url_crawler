@@ -1,0 +1,12 @@
+depth,url,type,message
+"5","https://help.x.com/using-x/x-supported-browsers","FAILED","HTTP error fetching URL. Status=403, URL=[https://help.x.com/using-x/x-supported-browsers]"
+"5","https://support.x.com/articles/20170514","FAILED","HTTP error fetching URL. Status=403, URL=[https://help.x.com/articles/20170514]"
+"6","https://help.x.com/de/using-twitter/twitter-timeline.html","FAILED","HTTP error fetching URL. Status=403, URL=[https://help.x.com/de/using-twitter/twitter-timeline.html]"
+"6","https://help.x.com/rules-and-policies/uk-resources","FAILED","HTTP error fetching URL. Status=403, URL=[https://help.x.com/rules-and-policies/uk-resources]"
+"6","https://help.x.com/en/forms/dsa/question","FAILED","HTTP error fetching URL. Status=403, URL=[https://help.x.com/en/forms/dsa/question]"
+"6","https://help.x.com/rules-and-policies","FAILED","HTTP error fetching URL. Status=403, URL=[https://help.x.com/rules-and-policies]"
+"6","https://help.x.com/rules-and-policies/x-services-and-corporate-affiliates","FAILED","HTTP error fetching URL. Status=403, URL=[https://help.x.com/rules-and-policies/x-services-and-corporate-affiliates]"
+"6","https://help.x.com/rules-and-policies/digital-services-act","FAILED","HTTP error fetching URL. Status=403, URL=[https://help.x.com/rules-and-policies/digital-services-act]"
+"6","https://help.x.com/rules-and-policies/twitter-cookies","FAILED","HTTP error fetching URL. Status=403, URL=[https://help.x.com/rules-and-policies/twitter-cookies]"
+"6","https://support.twitter.com/forms","FAILED","HTTP error fetching URL. Status=403, URL=[https://help.x.com/forms]"
+"7","https://help.twitter.com/en/rules-and-policies/shopping-policies","FAILED","HTTP error fetching URL. Status=403, URL=[https://help.x.com/en/rules-and-policies/shopping-policies]"

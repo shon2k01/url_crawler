@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+  <meta name="google-signin-scope" content="profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerprofiles.award https://www.googleapis.com/auth/devprofiles.full_control.firstparty">
+  <meta property="og:site_name" content="Google for Developers">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#fff">
+  <meta charset="utf-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="/_pwa/developers/manifest.json" crossorigin="use-credentials">
+  <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+  <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="//apis.google.com" crossorigin>
+  <link rel="preconnect" href="//www.google-analytics.com" crossorigin>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&amp;display=swap">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Material+Icons&amp;family=Material+Symbols+Outlined&amp;display=block">
+  <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/ve08add287a6b4bdf8961ab8a1be50bf551be3816cdd70b7cc934114ff3ad5f10/developers/css/app.css">
+  <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/ve08add287a6b4bdf8961ab8a1be50bf551be3816cdd70b7cc934114ff3ad5f10/developers/images/favicon-new.png">
+  <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/ve08add287a6b4bdf8961ab8a1be50bf551be3816cdd70b7cc934114ff3ad5f10/developers/images/touchicon-180-new.png">
+  <link rel="canonical" href="https://developers.google.com/analytics/legacy/universal-analytics">
+  <link rel="search" type="application/opensearchdescription+xml" title="Google for Developers" href="https://developers.google.com/s/opensearch.xml">
+  <link rel="alternate" hreflang="en" href="https://developers.google.com/analytics/legacy/universal-analytics">
+  <link rel="alternate" hreflang="x-default" href="https://developers.google.com/analytics/legacy/universal-analytics">
+  <link rel="alternate" hreflang="ar" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=ar">
+  <link rel="alternate" hreflang="bn" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=bn">
+  <link rel="alternate" hreflang="zh-Hans" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=zh-cn">
+  <link rel="alternate" hreflang="zh-Hant" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=zh-tw">
+  <link rel="alternate" hreflang="fa" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=fa">
+  <link rel="alternate" hreflang="fr" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=fr">
+  <link rel="alternate" hreflang="de" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=de">
+  <link rel="alternate" hreflang="he" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=he">
+  <link rel="alternate" hreflang="hi" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=hi">
+  <link rel="alternate" hreflang="id" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=id">
+  <link rel="alternate" hreflang="it" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=it">
+  <link rel="alternate" hreflang="ja" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=ja">
+  <link rel="alternate" hreflang="ko" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=ko">
+  <link rel="alternate" hreflang="pl" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=pl">
+  <link rel="alternate" hreflang="pt-BR" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=pt-br">
+  <link rel="alternate" hreflang="ru" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=ru">
+  <link rel="alternate" hreflang="es-419" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=es-419">
+  <link rel="alternate" hreflang="th" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=th">
+  <link rel="alternate" hreflang="tr" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=tr">
+  <link rel="alternate" hreflang="vi" href="https://developers.google.com/analytics/legacy/universal-analytics?hl=vi">
+  <title>Google Analytics &nbsp;|&nbsp; Google for Developers</title>
+  <meta property="og:title" content="Google Analytics &nbsp;|&nbsp; Google for Developers">
+  <meta property="og:url" content="https://developers.google.com/analytics/legacy/universal-analytics">
+  <meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/ve08add287a6b4bdf8961ab8a1be50bf551be3816cdd70b7cc934114ff3ad5f10/developers/images/opengraph/white.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/extras.css">
+ </head>
+ <body class="color-scheme--light" template="landing" theme="white" type="landing" layout="full" concierge="hide" pending>
+  <devsite-progress type="indeterminate" id="app-progress"></devsite-progress> <a href="#main-content" class="skip-link button"> Skip to main content </a>
+  <section class="devsite-wrapper">
+   <devsite-cookie-notification-bar></devsite-cookie-notification-bar><devsite-header role="banner">
+    <div class="devsite-header--inner" data-nosnippet>
+     <div class="devsite-top-logo-row-wrapper-wrapper">
+      <div class="devsite-top-logo-row-wrapper">
+       <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu" class="devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Navigation menu button" visually-hidden aria-label="Open menu"></button>
+        <div class="devsite-product-name-wrapper">
+         <a href="https://developers.google.com/analytics">
+          <div class="devsite-product-logo-container" size="medium">
+           <picture>
+            <img class="devsite-product-logo" alt="Google Analytics" src="//www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg" srcset=" //www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg" sizes="64px" loading="lazy">
+           </picture>
+          </div></a> <span class="devsite-product-name">
+          <ul class="devsite-breadcrumb-list">
+           <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark"><a href="https://developers.google.com/analytics" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Upper Header" data-value="1" track-type="globalNav" track-name="breadcrumb" track-metadata-position="1" track-metadata-eventdetail="Google Analytics">
+             <h1 class="devsite-product-name">
+              <svg class="devsite-google-wordmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 48">
+               <title>
+                Google
+               </title> <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z" />
+              </svg>Analytics</h1></a></li>
+          </ul></span>
+        </div>
+        <div class="devsite-top-logo-row-middle">
+         <div class="devsite-header-upper-tabs">
+          <devsite-tabs class="upper-tabs">
+           <nav class="devsite-tabs-wrapper" aria-label="Upper tabs">
+            <tab>
+             <a href="//support.google.com/analytics/answer/10089681" class="devsite-tabs-content gc-analytics-event " track-metadata-eventdetail="//support.google.com/analytics/answer/10089681" track-type="nav" track-metadata-position="nav - overview" track-metadata-module="primary nav" data-category="Site-Wide Custom Events" data-label="Tab: Overview" track-name="overview"> Overview </a>
+            </tab> <tab>
+             <a href="https://developers.google.com/analytics/devguides/collection/ga4" class="devsite-tabs-content gc-analytics-event " track-metadata-eventdetail="https://developers.google.com/analytics/devguides/collection/ga4" track-type="nav" track-metadata-position="nav - developer documentation" track-metadata-module="primary nav" data-category="Site-Wide Custom Events" data-label="Tab: Developer documentation" track-name="developer documentation"> Developer documentation </a>
+            </tab> <tab class="devsite-dropdown
+    
+    
+    
+    ">
+             <button class="devsite-tabs-content devsite-tabs-dropdown-only gc-analytics-event  devsite-icon devsite-icon-arrow-drop-down" track-type="nav" track-metadata-position="nav - related products" track-metadata-module="primary nav" data-category="Site-Wide Custom Events" data-label="Tab: Related products" track-name="related products">Related products</button>
+             <div class="devsite-tabs-dropdown" role="menu" aria-label="submenu" hidden>
+              <div class="devsite-tabs-dropdown-content">
+               <div class="devsite-tabs-dropdown-column
+                    ">
+                <ul class="devsite-tabs-dropdown-section
+                       ">
+                 <li class="devsite-nav-title" role="heading" tooltip>Measurement UIs</li>
+                 <li class="devsite-nav-item"><a href="//analytics.google.com/analytics/web/" track-type="nav" track-metadata-eventdetail="//analytics.google.com/analytics/web/" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="measurement uis" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Analytics
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="//marketingplatform.google.com/about/" track-type="nav" track-metadata-eventdetail="//marketingplatform.google.com/about/" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="measurement uis" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Marketing Platform
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="//tagmanager.google.com/" track-type="nav" track-metadata-eventdetail="//tagmanager.google.com/" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="measurement uis" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Tag Platform
+                   </div></a></li>
+                </ul>
+               </div>
+               <div class="devsite-tabs-dropdown-column
+                    ">
+                <ul class="devsite-tabs-dropdown-section
+                       ">
+                 <li class="devsite-nav-title" role="heading" tooltip>Developer products</li>
+                 <li class="devsite-nav-item"><a href="https://developers.google.com/marketing-platform/api" track-type="nav" track-metadata-eventdetail="https://developers.google.com/marketing-platform/api" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="developer products" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Marketing Platform API
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="https://developers.google.com/data-manager/api" track-type="nav" track-metadata-eventdetail="https://developers.google.com/data-manager/api" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="developer products" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Data Manager API
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="https://developers.google.com/doubleclick-advertisers" track-type="nav" track-metadata-eventdetail="https://developers.google.com/doubleclick-advertisers" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="developer products" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Campaign Manager 360
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="https://developers.google.com/meridian" track-type="nav" track-metadata-eventdetail="https://developers.google.com/meridian" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="developer products" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Meridian MMM
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="https://developers.google.com/google-ads/api" track-type="nav" track-metadata-eventdetail="https://developers.google.com/google-ads/api" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="developer products" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Google Ads API
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="https://developers.google.com/display-video" track-type="nav" track-metadata-eventdetail="https://developers.google.com/display-video" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="developer products" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Display &amp; Video 360
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="https://developers.google.com/google-ads/scripts/docs/start" track-type="nav" track-metadata-eventdetail="https://developers.google.com/google-ads/scripts/docs/start" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="developer products" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Google Ads Scripts
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="https://developers.google.com/bid-manager/api" track-type="nav" track-metadata-eventdetail="https://developers.google.com/bid-manager/api" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="developer products" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Bid Manager API
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="https://developers.google.com/ad-manager" track-type="nav" track-metadata-eventdetail="https://developers.google.com/ad-manager" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="developer products" tooltip>
+                   <div class="devsite-nav-item-title">
+                    AdManager
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="https://developers.google.com/interactive-media-ads" track-type="nav" track-metadata-eventdetail="https://developers.google.com/interactive-media-ads" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="developer products" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Interactive Media Ads
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="https://developers.google.com/admob" track-type="nav" track-metadata-eventdetail="https://developers.google.com/admob" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="developer products" tooltip>
+                   <div class="devsite-nav-item-title">
+                    AdMob
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="https://developers.google.com/authorized-buyers" track-type="nav" track-metadata-eventdetail="https://developers.google.com/authorized-buyers" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="developer products" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Authorized Buyers
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="https://developers.google.com/publisher-tag" track-type="nav" track-metadata-eventdetail="https://developers.google.com/publisher-tag" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="developer products" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Google Publisher Tag
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="https://developers.google.com/adsense" track-type="nav" track-metadata-eventdetail="https://developers.google.com/adsense" track-metadata-position="nav - related products" track-metadata-module="tertiary nav" track-metadata-module_headline="developer products" tooltip>
+                   <div class="devsite-nav-item-title">
+                    AdSense
+                   </div></a></li>
+                </ul>
+               </div>
+              </div>
+             </div>
+            </tab> <tab>
+             <a href="//blog.google/products/marketingplatform/analytics/" class="devsite-tabs-content gc-analytics-event " track-metadata-eventdetail="//blog.google/products/marketingplatform/analytics/" track-type="nav" track-metadata-position="nav - blog" track-metadata-module="primary nav" data-category="Site-Wide Custom Events" data-label="Tab: Blog" track-name="blog"> Blog </a>
+            </tab> <tab class="devsite-dropdown
+    
+    
+    
+    ">
+             <button class="devsite-tabs-content devsite-tabs-dropdown-only gc-analytics-event  devsite-icon devsite-icon-arrow-drop-down" track-type="nav" track-metadata-position="nav - community" track-metadata-module="primary nav" data-category="Site-Wide Custom Events" data-label="Tab: Community" track-name="community">Community</button>
+             <div class="devsite-tabs-dropdown" role="menu" aria-label="submenu" hidden>
+              <div class="devsite-tabs-dropdown-content">
+               <div class="devsite-tabs-dropdown-column
+                    ">
+                <ul class="devsite-tabs-dropdown-section
+                       ">
+                 <li class="devsite-nav-title" role="heading" tooltip>Community</li>
+                 <li class="devsite-nav-item"><a href="//support.google.com/analytics/answer/14906673" track-type="nav" track-metadata-eventdetail="//support.google.com/analytics/answer/14906673" track-metadata-position="nav - community" track-metadata-module="tertiary nav" track-metadata-module_headline="community" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Discord
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="//stackoverflow.com/questions/tagged/google-analytics" track-type="nav" track-metadata-eventdetail="//stackoverflow.com/questions/tagged/google-analytics" track-metadata-position="nav - community" track-metadata-module="tertiary nav" track-metadata-module_headline="community" tooltip>
+                   <div class="devsite-nav-item-title">
+                    Stack Overflow
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="//www.youtube.com/user/googleanalytics" track-type="nav" track-metadata-eventdetail="//www.youtube.com/user/googleanalytics" track-metadata-position="nav - community" track-metadata-module="tertiary nav" track-metadata-module_headline="community" tooltip>
+                   <div class="devsite-nav-item-title">
+                    YouTube
+                   </div></a></li>
+                 <li class="devsite-nav-item"><a href="//github.com/googleanalytics/" track-type="nav" track-metadata-eventdetail="//github.com/googleanalytics/" track-metadata-position="nav - community" track-metadata-module="tertiary nav" track-metadata-module_headline="community" tooltip>
+                   <div class="devsite-nav-item-title">
+                    GitHub
+                   </div></a></li>
+                </ul>
+               </div>
+              </div>
+             </div>
+            </tab>
+           </nav>
+          </devsite-tabs>
+         </div><devsite-search enable-signin enable-search enable-suggestions enable-query-completion enable-search-summaries project-name="Google Analytics" tenant-name="Google for Developers" project-scope="/analytics" url-scoped="https://developers.google.com/s/results/analytics">
+          <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+           <div class="devsite-search-container">
+            <button type="button" search-open class="devsite-search-button devsite-header-icon-button button-flat material-icons" aria-label="Open search"></button>
+            <div class="devsite-searchbox">
+             <input aria-activedescendant="" aria-autocomplete="list" aria-label="Search" aria-expanded="false" aria-haspopup="listbox" autocomplete="off" class="devsite-search-field devsite-search-query" name="q" placeholder="Search" role="combobox" type="text" value="">
+             <div class="devsite-search-image material-icons" aria-hidden="true">
+              <svg class="devsite-search-ai-image" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <g clip-path="url(#clip0_6641_386)">
+                <path d="M19.6 21L13.3 14.7C12.8 15.1 12.225 15.4167 11.575 15.65C10.925 15.8833 10.2333 16 9.5 16C7.68333 16 6.14167 15.375 4.875 14.125C3.625 12.8583 3 11.3167 3 9.5C3 7.68333 3.625 6.15 4.875 4.9C6.14167 3.63333 7.68333 3 9.5 3C10.0167 3 10.5167 3.05833 11 3.175C11.4833 3.275 11.9417 3.43333 12.375 3.65L10.825 5.2C10.6083 5.13333 10.3917 5.08333 10.175 5.05C9.95833 5.01667 9.73333 5 9.5 5C8.25 5 7.18333 5.44167 6.3 6.325C5.43333 7.19167 5 8.25 5 9.5C5 10.75 5.43333 11.8167 6.3 12.7C7.18333 13.5667 8.25 14 9.5 14C10.6667 14 11.6667 13.625 12.5 12.875C13.35 12.1083 13.8417 11.15 13.975 10H15.975C15.925 10.6333 15.7833 11.2333 15.55 11.8C15.3333 12.3667 15.05 12.8667 14.7 13.3L21 19.6L19.6 21ZM17.5 12C17.5 10.4667 16.9667 9.16667 15.9 8.1C14.8333 7.03333 13.5333 6.5 12 6.5C13.5333 6.5 14.8333 5.96667 15.9 4.9C16.9667 3.83333 17.5 2.53333 17.5 0.999999C17.5 2.53333 18.0333 3.83333 19.1 4.9C20.1667 5.96667 21.4667 6.5 23 6.5C21.4667 6.5 20.1667 7.03333 19.1 8.1C18.0333 9.16667 17.5 10.4667 17.5 12Z" fill="#5F6368" />
+               </g> <defs>
+                <clipPath id="clip0_6641_386">
+                 <rect width="24" height="24" fill="white" />
+                </clipPath>
+               </defs>
+              </svg>
+             </div>
+             <div class="devsite-search-shortcut-icon-container" aria-hidden="true">
+              <kbd class="devsite-search-shortcut-icon">/</kbd>
+             </div>
+            </div>
+           </div>
+          </form>
+          <button type="button" search-close class="devsite-search-button devsite-header-icon-button button-flat material-icons" aria-label="Close search"></button>
+         </devsite-search>
+        </div><devsite-language-selector>
+         <ul role="presentation">
+          <li role="presentation"><a role="menuitem" lang="en">English</a></li>
+          <li role="presentation"><a role="menuitem" lang="de">Deutsch</a></li>
+          <li role="presentation"><a role="menuitem" lang="es">Español</a></li>
+          <li role="presentation"><a role="menuitem" lang="es_419">Español – América Latina</a></li>
+          <li role="presentation"><a role="menuitem" lang="fr">Français</a></li>
+          <li role="presentation"><a role="menuitem" lang="id">Indonesia</a></li>
+          <li role="presentation"><a role="menuitem" lang="it">Italiano</a></li>
+          <li role="presentation"><a role="menuitem" lang="pl">Polski</a></li>
+          <li role="presentation"><a role="menuitem" lang="pt_br">Português – Brasil</a></li>
+          <li role="presentation"><a role="menuitem" lang="vi">Tiếng Việt</a></li>
+          <li role="presentation"><a role="menuitem" lang="tr">Türkçe</a></li>
+          <li role="presentation"><a role="menuitem" lang="ru">Русский</a></li>
+          <li role="presentation"><a role="menuitem" lang="he">עברית</a></li>
+          <li role="presentation"><a role="menuitem" lang="ar">العربيّة</a></li>
+          <li role="presentation"><a role="menuitem" lang="fa">فارسی</a></li>
+          <li role="presentation"><a role="menuitem" lang="hi">हिंदी</a></li>
+          <li role="presentation"><a role="menuitem" lang="bn">বাংলা</a></li>
+          <li role="presentation"><a role="menuitem" lang="th">ภาษาไทย</a></li>
+          <li role="presentation"><a role="menuitem" lang="zh_cn">中文 – 简体</a></li>
+          <li role="presentation"><a role="menuitem" lang="zh_tw">中文 – 繁體</a></li>
+          <li role="presentation"><a role="menuitem" lang="ja">日本語</a></li>
+          <li role="presentation"><a role="menuitem" lang="ko">한국어</a></li>
+         </ul>
+        </devsite-language-selector> <devsite-user enable-profiles fp-auth id="devsite-user">
+         <span class="button devsite-top-button" aria-hidden="true" visually-hidden>Sign in</span>
+        </devsite-user>
+       </div>
+      </div>
+     </div>
+     <div class="devsite-collapsible-section
+    
+      devsite-header-no-lower-tabs
+    ">
+      <div class="devsite-header-background">
+       <div class="devsite-product-id-row">
+        <div class="devsite-product-description-row">
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </devsite-header> <devsite-book-nav scrollbars hidden>
+    <div class="devsite-book-nav-filter" hidden>
+     <span class="filter-list-icon material-icons" aria-hidden="true"></span> <input type="text" placeholder="Filter" aria-label="Type to filter" role="searchbox"> <span class="filter-clear-button hidden" data-title="Clear filter" aria-label="Clear filter" role="button" tabindex="0"></span>
+    </div>
+    <nav class="devsite-book-nav devsite-nav nocontent" aria-label="Side menu">
+     <div class="devsite-mobile-header">
+      <button type="button" id="devsite-close-nav" class="devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Close navigation" aria-label="Close navigation"></button>
+      <div class="devsite-product-name-wrapper">
+       <a href="https://developers.google.com/analytics">
+        <div class="devsite-product-logo-container" size="medium">
+         <picture>
+          <img class="devsite-product-logo" alt="Google Analytics" src="//www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg" srcset=" //www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg" sizes="64px" loading="lazy">
+         </picture>
+        </div></a> <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+         <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark"><a href="https://developers.google.com/analytics" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Upper Header" data-value="1" track-type="globalNav" track-name="breadcrumb" track-metadata-position="1" track-metadata-eventdetail="Google Analytics">
+           <svg class="devsite-google-wordmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 148 48">
+            <title>
+             Google
+            </title> <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z" />
+           </svg>Analytics </a></li>
+        </ul></span>
+      </div>
+     </div>
+     <div class="devsite-book-nav-wrapper">
+      <div class="devsite-mobile-nav-top">
+       <ul class="devsite-nav-list">
+        <li class="devsite-nav-item"><a href="//support.google.com/analytics/answer/10089681" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Tab: Overview" track-name="overview" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Overview </span> </a></li>
+        <li class="devsite-nav-item"><a href="/analytics/devguides/collection/ga4" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Tab: Developer documentation" track-name="developer documentation" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Developer documentation </span> </a></li>
+        <li class="devsite-nav-item"><span class="devsite-nav-title" tooltip data-category="Site-Wide Custom Events" data-label="Tab: Related products" track-name="related products"> <span class="devsite-nav-text" tooltip> Related products </span> </span>
+         <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu
+               ">
+          <li class="devsite-nav-item"><span class="devsite-nav-title" tooltip data-category="Site-Wide Custom Events" data-label="Tab: Related products" track-name="related products"> <span class="devsite-nav-text" tooltip menu="Related products"> More </span> <span class="devsite-nav-icon material-icons" data-icon="forward" menu="Related products"> </span> </span></li>
+         </ul></li>
+        <li class="devsite-nav-item"><a href="//blog.google/products/marketingplatform/analytics/" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Tab: Blog" track-name="blog" track-type="globalNav" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Blog </span> </a></li>
+        <li class="devsite-nav-item"><span class="devsite-nav-title" tooltip data-category="Site-Wide Custom Events" data-label="Tab: Community" track-name="community"> <span class="devsite-nav-text" tooltip> Community </span> </span>
+         <ul class="devsite-nav-responsive-tabs devsite-nav-has-menu
+               ">
+          <li class="devsite-nav-item"><span class="devsite-nav-title" tooltip data-category="Site-Wide Custom Events" data-label="Tab: Community" track-name="community"> <span class="devsite-nav-text" tooltip menu="Community"> More </span> <span class="devsite-nav-icon material-icons" data-icon="forward" menu="Community"> </span> </span></li>
+         </ul></li>
+       </ul>
+      </div>
+      <div class="devsite-mobile-nav-bottom">
+       <ul class="devsite-nav-list" menu="Related products" aria-label="Side menu" hidden>
+        <li class="devsite-nav-item devsite-nav-heading"><span class="devsite-nav-title" tooltip> <span class="devsite-nav-text" tooltip> Measurement UIs </span> </span></li>
+        <li class="devsite-nav-item"><a href="//analytics.google.com/analytics/web/" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Analytics" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Analytics </span> </a></li>
+        <li class="devsite-nav-item"><a href="//marketingplatform.google.com/about/" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Marketing Platform" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Marketing Platform </span> </a></li>
+        <li class="devsite-nav-item"><a href="//tagmanager.google.com/" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Tag Platform" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Tag Platform </span> </a></li>
+        <li class="devsite-nav-item devsite-nav-heading"><span class="devsite-nav-title" tooltip> <span class="devsite-nav-text" tooltip> Developer products </span> </span></li>
+        <li class="devsite-nav-item"><a href="/marketing-platform/api" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Marketing Platform API" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Marketing Platform API </span> </a></li>
+        <li class="devsite-nav-item"><a href="/data-manager/api" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Data Manager API" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Data Manager API </span> </a></li>
+        <li class="devsite-nav-item"><a href="/doubleclick-advertisers" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Campaign Manager 360" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Campaign Manager 360 </span> </a></li>
+        <li class="devsite-nav-item"><a href="/meridian" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Meridian MMM" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Meridian MMM </span> </a></li>
+        <li class="devsite-nav-item"><a href="/google-ads/api" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Ads API" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Google Ads API </span> </a></li>
+        <li class="devsite-nav-item"><a href="/display-video" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Display &amp; Video 360" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Display &amp; Video 360 </span> </a></li>
+        <li class="devsite-nav-item"><a href="/google-ads/scripts/docs/start" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Ads Scripts" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Google Ads Scripts </span> </a></li>
+        <li class="devsite-nav-item"><a href="/bid-manager/api" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Bid Manager API" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Bid Manager API </span> </a></li>
+        <li class="devsite-nav-item"><a href="/ad-manager" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: AdManager" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> AdManager </span> </a></li>
+        <li class="devsite-nav-item"><a href="/interactive-media-ads" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Interactive Media Ads" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Interactive Media Ads </span> </a></li>
+        <li class="devsite-nav-item"><a href="/admob" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: AdMob" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> AdMob </span> </a></li>
+        <li class="devsite-nav-item"><a href="/authorized-buyers" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Authorized Buyers" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Authorized Buyers </span> </a></li>
+        <li class="devsite-nav-item"><a href="/publisher-tag" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Publisher Tag" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Google Publisher Tag </span> </a></li>
+        <li class="devsite-nav-item"><a href="/adsense" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: AdSense" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> AdSense </span> </a></li>
+       </ul>
+       <ul class="devsite-nav-list" menu="Community" aria-label="Side menu" hidden>
+        <li class="devsite-nav-item devsite-nav-heading"><span class="devsite-nav-title" tooltip> <span class="devsite-nav-text" tooltip> Community </span> </span></li>
+        <li class="devsite-nav-item"><a href="//support.google.com/analytics/answer/14906673" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Discord" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Discord </span> </a></li>
+        <li class="devsite-nav-item"><a href="//stackoverflow.com/questions/tagged/google-analytics" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Stack Overflow" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> Stack Overflow </span> </a></li>
+        <li class="devsite-nav-item"><a href="//www.youtube.com/user/googleanalytics" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: YouTube" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> YouTube </span> </a></li>
+        <li class="devsite-nav-item"><a href="//github.com/googleanalytics/" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Responsive Tab: GitHub" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav"> <span class="devsite-nav-text" tooltip> GitHub </span> </a></li>
+       </ul>
+      </div>
+     </div>
+    </nav>
+   </devsite-book-nav>
+   <section id="gc-wrapper">
+    <main role="main" id="main-content" class="devsite-main-content">
+     <div class="devsite-sidebar">
+      <div class="devsite-sidebar-content">
+       <devsite-toc class="devsite-nav" role="navigation" aria-label="On this page" depth="2" scrollbars disabled></devsite-toc> <devsite-recommendations-sidebar class="nocontent devsite-nav">
+       </devsite-recommendations-sidebar>
+      </div>
+     </div><devsite-content>
+      <article class="devsite-article">
+       <style>
+      /* Styles inlined from /analytics/css/landing.css */
+/* Enlarges the top header */
+h1 {
+  font-size: 44px;
+  line-height: 52px;
+}
+
+/* Hides the search bar at the top of the page */
+.devsite-search-form {
+  display: none;
+}
+
+/* Adds padding to the top and bottom of select rows */
+.padding-top-bottom {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+/* Adds padding to the top of select rows */
+.padding-top {
+  padding-top: 40px !important;
+}
+
+/* Adjusts the size of the images in the "Join the community" row */
+.ga-landing-card-row figure {
+  background: none;
+  height: 48px;
+  align-items: center;
+  display: flex;
+  margin: 16px 0 0 16px;
+}
+
+/* Removes the background from the images in the "Join the community" row */
+.devsite-landing-row-item-image:not([background]) {
+  background: none;
+}
+
+/* Hides the "Google Developers" footer */
+.devsite-footer-utility {
+  display: none;
+}
+
+/* Styles the space between the YouTube videos and the channel link */
+.devsite-landing-row-inner div > a {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Styles the search field */
+.search-input {
+  position: relative;
+}
+
+.search-input input {
+  background-color: #fff;
+  display: block;
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 40px;
+  border: 1px solid white;
+  padding: 8px 8px 8px 40px;
+  border-radius: 8px;
+}
+
+.search-input img {
+  position: absolute;
+  top: 6px;
+  /* left: 6px; */
+}
+
+.search-form {
+  text-align: center;
+}
+
+/* Styles the feedback section */
+.feedback-section {
+  padding-bottom: 30px;
+}
+
+/* Resizes the "Was this help?" feedback text */
+devsite-thumb-rating .devsite-thumb-label {
+  font-size: 18px;
+  padding-bottom: 4px;
+}
+
+/* Resizes the feedback button text */
+.send-feedback-btn {
+  font-size: 16px;
+}
+
+/* Resizes the feedback thumb buttons */
+devsite-thumb-rating .devsite-thumb-icon {
+  flex: none;
+  height: 26px;
+  width: 26px;
+}
+
+/* Resizes the images in the "Continue learning" section */
+.cl-images {
+  width: 60px;
+}
+
+      </style>
+       <div class="devsite-banner devsite-banner-announcement nocontent" background="deep-orange">
+        <div class="devsite-banner-message">
+         <div class="devsite-banner-message-text">
+          Try the MCP server for Google Analytics. Install from <a href="//github.com/googleanalytics/google-analytics-mcp">GitHub</a>, and see the <a href="/analytics/devguides/MCP">announcement</a> for more details.
+         </div>
+        </div>
+       </div>
+       <div class="devsite-article-meta nocontent" role="navigation">
+        <ul class="devsite-breadcrumb-list" aria-label="Breadcrumb">
+         <li class="devsite-breadcrumb-item
+             "><a href="https://developers.google.com/" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="1" track-type="globalNav" track-name="breadcrumb" track-metadata-position="1" track-metadata-eventdetail=""> Home </a></li>
+         <li class="devsite-breadcrumb-item
+             ">
+          <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div><a href="https://developers.google.com/products" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="2" track-type="globalNav" track-name="breadcrumb" track-metadata-position="2" track-metadata-eventdetail=""> Products </a></li>
+         <li class="devsite-breadcrumb-item
+             ">
+          <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div><a href="https://developers.google.com/analytics" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="3" track-type="globalNav" track-name="breadcrumb" track-metadata-position="3" track-metadata-eventdetail="Google Analytics"> Google Analytics </a></li>
+        </ul>
+       </div><devsite-feedback position="header" project-name="Google Analytics" product-id="69256" bucket="google-analytics-4" context="" version="t-devsite-webserver-20251211-r00-rc00.474021853233746830" data-label="Send Feedback Button" track-type="feedback" track-name="sendFeedbackLink" track-metadata-position="header" class="nocontent" disable-product-feedback project-icon="//www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg" project-support-url="https://developers.google.com/analytics/help">
+        <button>Send feedback</button>
+       </devsite-feedback> <devsite-actions hidden data-nosnippet>
+        <devsite-feature-tooltip ack-key="AckCollectionsBookmarkTooltipDismiss" analytics-category="Site-Wide Custom Events" analytics-action-show="Callout Profile displayed" analytics-action-close="Callout Profile dismissed" analytics-label="Create Collection Callout" class="devsite-page-bookmark-tooltip nocontent" dismiss-button="true" id="devsite-collections-dropdown" dismiss-button-text="Dismiss" close-button-text="Got it">
+         <devsite-bookmark></devsite-bookmark>
+         <span slot="popout-heading"> Stay organized with collections </span>
+         <span slot="popout-contents"> Save and categorize content based on your preferences. </span>
+        </devsite-feature-tooltip>
+       </devsite-actions> <devsite-toc class="devsite-nav" depth="2" devsite-toc-embedded disabled>
+       </devsite-toc>
+       <div class="devsite-article-body clearfix
+  ">
+        <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-50 devsite-landing-row-marquee padding-top-bottom" header-position="top">
+         <div class="devsite-landing-row-inner">
+          <div class="devsite-landing-row-group">
+           <div class="devsite-landing-row-item" description-position="bottom">
+            <div class="devsite-landing-row-item-media
+            ">
+             <figure class="devsite-landing-row-item-image">
+              <picture>
+               <img alt="" src="https://developers.google.com/static/analytics/images/landing-page/Rectangular-16x9/E02877824-GMP-Google-Analytics-Help-Center-Assets-Apr23-Graphic-2.1@300x.svg" srcset="https://developers.google.com/static/analytics/images/landing-page/Rectangular-16x9/E02877824-GMP-Google-Analytics-Help-Center-Assets-Apr23-Graphic-2.1@300x.svg" sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px" fetchpriority="high">
+              </picture>
+             </figure>
+            </div>
+            <div class="devsite-landing-row-item-description">
+             <div class="devsite-landing-row-item-body">
+              <div class="devsite-landing-row-item-description-content">
+               <h1 id="the-page-youre-looking-for-isnt-available." data-text="The page you're looking for isn't available." tabindex="-1">The page you're looking for isn't available.</h1>
+               <p class="ga-hero-description">The link you clicked was to documentation on the legacy version, Universal Analytics. Universal Analytics has sunset and is no longer available as of July 1, 2024.</p>
+               <p><em>Visit the <a href="/analytics">Analytics Learning Center</a> to get started with the new version, Google Analytics 4.</em></p>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section><devsite-hats-survey class="nocontent" hats-id="xVc5nZna0LHkahqinNfT0Z2oSJDe" listnr-id="82128"></devsite-hats-survey>
+       </div>
+       <div class="devsite-floating-action-buttons"></div>
+      </article>
+      <devsite-notification>
+      </devsite-notification>
+      <div class="devsite-content-data">
+       <template class="devsite-thumb-rating-feedback">
+        <devsite-feedback position="thumb-rating" project-name="Google Analytics" product-id="69256" bucket="google-analytics-4" context="" version="t-devsite-webserver-20251211-r00-rc00.474021853233746830" data-label="Send Feedback Button" track-type="feedback" track-name="sendFeedbackLink" track-metadata-position="thumb-rating" class="nocontent" disable-product-feedback project-icon="//www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg" project-support-url="https://developers.google.com/analytics/help">
+         <button>Need to tell us more?</button>
+        </devsite-feedback>
+       </template>
+       <template class="devsite-content-data-template">
+        [[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],[],[],[]]
+       </template>
+      </div>
+     </devsite-content>
+    </main><devsite-footer-promos class="devsite-footer">
+     <nav class="devsite-footer-promos nocontent" aria-label="Promotions">
+      <ul class="devsite-footer-promos-list">
+       <li class="devsite-footer-promo"><a href="https://goo.gle/ga-newsletter" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Promo Link (index 1)"> <picture>
+          <img class="devsite-footer-promo-icon" src="https://www.gstatic.com/images/branding/product/1x/email_64dp.png" loading="lazy" alt="Newsletter">
+         </picture> <span class="devsite-footer-promo-label"> Newsletter </span> </a>
+        <div class="devsite-footer-promo-description">
+         Sign up for Google Analytics developer newsletter
+        </div></li>
+       <li class="devsite-footer-promo"><a href="https://goo.gle/ga-discord" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Promo Link (index 2)"> <picture>
+          <img class="devsite-footer-promo-icon" src="/static/analytics/images/logo-discord.svg" loading="lazy" alt="Discord">
+         </picture> <span class="devsite-footer-promo-label"> Discord </span> </a>
+        <div class="devsite-footer-promo-description">
+         Join Google Analytics Discord server
+        </div></li>
+       <li class="devsite-footer-promo"><a href="https://blog.google/products/marketingplatform/analytics" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Promo Link (index 3)"> <picture>
+          <img class="devsite-footer-promo-icon" src="/static/analytics/images/logo-blog.svg" loading="lazy" alt="Blog">
+         </picture> <span class="devsite-footer-promo-label"> Blog </span> </a>
+        <div class="devsite-footer-promo-description">
+         Read the Google Analytics blog
+        </div></li>
+       <li class="devsite-footer-promo"><a href="https://github.com/googleanalytics/" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Promo Link (index 4)"> <picture>
+          <img class="devsite-footer-promo-icon" src="/static/site-assets/logo-github.svg" loading="lazy" alt="GitHub">
+         </picture> <span class="devsite-footer-promo-label"> GitHub </span> </a>
+        <div class="devsite-footer-promo-description">
+         Try Google Analytics code samples
+        </div></li>
+       <li class="devsite-footer-promo"><a href="http://stackoverflow.com/questions/tagged/google-analytics" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Promo Link (index 5)"> <picture>
+          <img class="devsite-footer-promo-icon" src="/static/site-assets/logo-stack-overflow.svg" loading="lazy" alt="Stack Overflow">
+         </picture> <span class="devsite-footer-promo-label"> Stack Overflow </span> </a>
+        <div class="devsite-footer-promo-description">
+         Ask questions using the google-analytics tag
+        </div></li>
+       <li class="devsite-footer-promo"><a href="https://www.youtube.com/user/googleanalytics" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Promo Link (index 6)"> <picture>
+          <img class="devsite-footer-promo-icon" src="https://www.gstatic.com/images/icons/material/product/2x/youtube_64dp.png" loading="lazy" alt="Videos">
+         </picture> <span class="devsite-footer-promo-label"> Videos </span> </a>
+        <div class="devsite-footer-promo-description">
+         Watch Google Analytics videos on YouTube
+        </div></li>
+      </ul>
+     </nav>
+    </devsite-footer-promos> <devsite-footer-linkboxes class="devsite-footer">
+     <nav class="devsite-footer-linkboxes nocontent" aria-label="Footer links">
+      <ul class="devsite-footer-linkboxes-list">
+       <li class="devsite-footer-linkbox ">
+        <h3 class="devsite-footer-linkbox-heading no-link">Resources</h3>
+        <ul class="devsite-footer-linkbox-list">
+         <li class="devsite-footer-linkbox-item"><a href="https://support.google.com/analytics" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)"> Help center </a></li>
+         <li class="devsite-footer-linkbox-item"><a href="https://developers.google.com/analytics" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)"> Developer site </a></li>
+         <li class="devsite-footer-linkbox-item"><a href="https://support.google.com/analytics/answer/9164320" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)"> Release notes </a></li>
+         <li class="devsite-footer-linkbox-item"><a href="/analytics/help" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)"> Get help </a></li>
+         <li class="devsite-footer-linkbox-item"><a href="https://issuetracker.google.com/issues?q=componentid:187400" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 5)"> Report an issue </a></li>
+        </ul></li>
+       <li class="devsite-footer-linkbox ">
+        <h3 class="devsite-footer-linkbox-heading no-link">Join a community</h3>
+        <ul class="devsite-footer-linkbox-list">
+         <li class="devsite-footer-linkbox-item"><a href="/analytics/community" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)"> Developer community &amp; updates </a></li>
+         <li class="devsite-footer-linkbox-item"><a href="https://support.google.com/analytics/community" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)"> Analytics community forum </a></li>
+        </ul></li>
+       <li class="devsite-footer-linkbox ">
+        <h3 class="devsite-footer-linkbox-heading no-link">Product information</h3>
+        <ul class="devsite-footer-linkbox-list">
+         <li class="devsite-footer-linkbox-item"><a href="https://enterprisemarketingportal.google/auth/find-a-partner?certificationsFilters=Analytics" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)"> Partner portal </a></li>
+         <li class="devsite-footer-linkbox-item"><a href="https://marketingplatform.google.com/" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)"> Google Marketing Platform </a></li>
+         <li class="devsite-footer-linkbox-item"><a href="https://www.google.com/analytics/terms/" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)"> Terms of Service </a></li>
+         <li class="devsite-footer-linkbox-item"><a href="/analytics/policy" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)"> Protocol / SDK Policy </a></li>
+         <li class="devsite-footer-linkbox-item"><a href="/analytics/terms/branding-policy" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 5)"> Branding Policy </a></li>
+        </ul></li>
+      </ul>
+     </nav>
+    </devsite-footer-linkboxes> <devsite-footer-utility class="devsite-footer">
+     <div class="devsite-footer-utility nocontent">
+      <nav class="devsite-footer-sites" aria-label="Other Google Developers websites">
+       <a href="https://developers.google.com/" class="devsite-footer-sites-logo-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Developers Link"> <picture>
+         <img class="devsite-footer-sites-logo" src="https://www.gstatic.com/devrel-devsite/prod/ve08add287a6b4bdf8961ab8a1be50bf551be3816cdd70b7cc934114ff3ad5f10/developers/images/lockup-google-for-developers.svg" loading="lazy" alt="Google Developers">
+        </picture> </a>
+       <ul class="devsite-footer-sites-list">
+        <li class="devsite-footer-sites-item"><a href="//developer.android.com" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Android Link"> Android </a></li>
+        <li class="devsite-footer-sites-item"><a href="//developer.chrome.com/home" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Chrome Link"> Chrome </a></li>
+        <li class="devsite-footer-sites-item"><a href="//firebase.google.com" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Firebase Link"> Firebase </a></li>
+        <li class="devsite-footer-sites-item"><a href="//cloud.google.com" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Cloud Platform Link"> Google Cloud Platform </a></li>
+        <li class="devsite-footer-sites-item"><a href="//ai.google.dev/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google AI Link"> Google AI </a></li>
+        <li class="devsite-footer-sites-item"><a href="/products" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer All products Link"> All products </a></li>
+       </ul>
+      </nav>
+      <nav class="devsite-footer-utility-links" aria-label="Utility links">
+       <ul class="devsite-footer-utility-list">
+        <li class="devsite-footer-utility-item
+                 "><a class="devsite-footer-utility-link gc-analytics-event" href="/terms/site-terms" data-category="Site-Wide Custom Events" data-label="Footer Terms link"> Terms </a></li>
+        <li class="devsite-footer-utility-item
+                 "><a class="devsite-footer-utility-link gc-analytics-event" href="//policies.google.com/privacy" data-category="Site-Wide Custom Events" data-label="Footer Privacy link"> Privacy </a></li>
+        <li class="devsite-footer-utility-item
+                 glue-cookie-notification-bar-control"><a class="devsite-footer-utility-link gc-analytics-event" href="#" data-category="Site-Wide Custom Events" data-label="Footer Manage cookies link" aria-hidden="true"> Manage cookies </a></li>
+       </ul><devsite-language-selector>
+        <ul role="presentation">
+         <li role="presentation"><a role="menuitem" lang="en">English</a></li>
+         <li role="presentation"><a role="menuitem" lang="de">Deutsch</a></li>
+         <li role="presentation"><a role="menuitem" lang="es">Español</a></li>
+         <li role="presentation"><a role="menuitem" lang="es_419">Español – América Latina</a></li>
+         <li role="presentation"><a role="menuitem" lang="fr">Français</a></li>
+         <li role="presentation"><a role="menuitem" lang="id">Indonesia</a></li>
+         <li role="presentation"><a role="menuitem" lang="it">Italiano</a></li>
+         <li role="presentation"><a role="menuitem" lang="pl">Polski</a></li>
+         <li role="presentation"><a role="menuitem" lang="pt_br">Português – Brasil</a></li>
+         <li role="presentation"><a role="menuitem" lang="vi">Tiếng Việt</a></li>
+         <li role="presentation"><a role="menuitem" lang="tr">Türkçe</a></li>
+         <li role="presentation"><a role="menuitem" lang="ru">Русский</a></li>
+         <li role="presentation"><a role="menuitem" lang="he">עברית</a></li>
+         <li role="presentation"><a role="menuitem" lang="ar">العربيّة</a></li>
+         <li role="presentation"><a role="menuitem" lang="fa">فارسی</a></li>
+         <li role="presentation"><a role="menuitem" lang="hi">हिंदी</a></li>
+         <li role="presentation"><a role="menuitem" lang="bn">বাংলা</a></li>
+         <li role="presentation"><a role="menuitem" lang="th">ภาษาไทย</a></li>
+         <li role="presentation"><a role="menuitem" lang="zh_cn">中文 – 简体</a></li>
+         <li role="presentation"><a role="menuitem" lang="zh_tw">中文 – 繁體</a></li>
+         <li role="presentation"><a role="menuitem" lang="ja">日本語</a></li>
+         <li role="presentation"><a role="menuitem" lang="ko">한국어</a></li>
+        </ul>
+       </devsite-language-selector>
+      </nav>
+     </div>
+    </devsite-footer-utility> <devsite-panel>
+    </devsite-panel> <devsite-concierge data-info-panel data-ai-panel data-api-explorer-panel>
+    </devsite-concierge>
+   </section>
+  </section><devsite-sitemask></devsite-sitemask> <devsite-snackbar></devsite-snackbar> <devsite-tooltip></devsite-tooltip> <devsite-heading-link></devsite-heading-link> <devsite-analytics>
+   <script type="application/json" analytics>[{&#34;dimensions&#34;: {&#34;dimension4&#34;: &#34;Google Analytics&#34;, &#34;dimension3&#34;: false, &#34;dimension5&#34;: &#34;en&#34;, &#34;dimension1&#34;: &#34;Signed out&#34;, &#34;dimension6&#34;: &#34;en&#34;, &#34;dimension11&#34;: false}, &#34;gaid&#34;: &#34;UA-24532603-1&#34;, &#34;metrics&#34;: {&#34;ratings_count&#34;: &#34;metric2&#34;, &#34;ratings_value&#34;: &#34;metric1&#34;}, &#34;purpose&#34;: 1}]</script>
+   <script type="application/json" tag-management>{&#34;at&#34;: &#34;True&#34;, &#34;ga4&#34;: [{&#34;id&#34;: &#34;G-272J68FCRF&#34;, &#34;purpose&#34;: 1}, {&#34;id&#34;: &#34;G-M12NNFS0D8&#34;, &#34;purpose&#34;: 0}], &#34;ga4p&#34;: [{&#34;id&#34;: &#34;G-272J68FCRF&#34;, &#34;purpose&#34;: 1}], &#34;gtm&#34;: [{&#34;id&#34;: &#34;GTM-T98GCPGN&#34;, &#34;purpose&#34;: 1}], &#34;parameters&#34;: {&#34;internalUser&#34;: &#34;False&#34;, &#34;language&#34;: {&#34;machineTranslated&#34;: &#34;False&#34;, &#34;requested&#34;: &#34;en&#34;, &#34;served&#34;: &#34;en&#34;}, &#34;pageType&#34;: &#34;landing&#34;, &#34;projectName&#34;: &#34;Google Analytics&#34;, &#34;signedIn&#34;: &#34;False&#34;, &#34;tenant&#34;: &#34;developers&#34;, &#34;recommendations&#34;: {&#34;sourcePage&#34;: &#34;&#34;, &#34;sourceType&#34;: 0, &#34;sourceRank&#34;: 0, &#34;sourceIdenticalDescriptions&#34;: 0, &#34;sourceTitleWords&#34;: 0, &#34;sourceDescriptionWords&#34;: 0, &#34;experiment&#34;: &#34;&#34;}, &#34;experiment&#34;: {&#34;ids&#34;: &#34;&#34;}}}</script>
+  </devsite-analytics> <devsite-badger></devsite-badger>
+  <script nonce="qpUQRIwVNJTM2Iek9pepB9yqqDpWsl">
+  
+  (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/ve08add287a6b4bdf8961ab8a1be50bf551be3816cdd70b7cc934114ff3ad5f10/developers/js/app_loader.js', '[1,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/ve08add287a6b4bdf8961ab8a1be50bf551be3816cdd70b7cc934114ff3ad5f10","https://www.gstatic.com/devrel-devsite/prod/ve08add287a6b4bdf8961ab8a1be50bf551be3816cdd70b7cc934114ff3ad5f10/developers","https://developers-dot-devsite-v2-prod.appspot.com",1,null,["/_pwa/developers/manifest.json","https://www.gstatic.com/devrel-devsite/prod/ve08add287a6b4bdf8961ab8a1be50bf551be3816cdd70b7cc934114ff3ad5f10/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/ve08add287a6b4bdf8961ab8a1be50bf551be3816cdd70b7cc934114ff3ad5f10/developers/images/favicon-new.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,21,25,50,52,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,112,113,117,118,120,122,124,125,126,127,129,130,131,132,133,134,135,136,138,140,141,147,148,149,151,152,156,157,158,159,161,163,164,168,169,170,179,180,182,183,186,191,193,196],"AIzaSyAP-jjEJBzmIyKR4F-3XITp8yM9T1gEEI8","AIzaSyB6xiKGDR5O3Ak2okS4rLkauxGUG7XP0hg","developers.google.com","AIzaSyAQk0fBONSGUqCNznf6Krs82Ap1-NV6J4o","AIzaSyCCxcqdrZ_7QMeLCRY20bh_SXdAYqy70KY",null,null,null,["MiscFeatureFlags__emergency_css","MiscFeatureFlags__enable_project_variables","BookNav__enable_tenant_cache_key","Profiles__enable_developer_profile_benefits_ui_redesign","TpcFeatures__proxy_prod_host","Profiles__enable_awarding_url","Search__enable_ai_search_summaries_for_all","Cloud__enable_free_trial_server_call","DevPro__enable_nvidia_credits_card","Profiles__enable_release_notes_notifications","DevPro__remove_eu_tax_intake_form","MiscFeatureFlags__developers_footer_image","DevPro__enable_google_payments_buyflow","Profiles__enable_user_type","DevPro__enable_cloud_innovators_plus","Cloud__enable_llm_concierge_chat","MiscFeatureFlags__enable_variable_operator_index_yaml","Profiles__enable_completequiz_endpoint","MiscFeatureFlags__enable_variable_operator","MiscFeatureFlags__gdp_dashboard_reskin_enabled","Profiles__enable_join_program_group_endpoint","Concierge__enable_key_takeaways_new_ui","Profiles__enable_callout_notifications","Concierge__enable_actions_menu","EngEduTelemetry__enable_engedu_telemetry","Significatio__enable_by_tenant","Search__enable_ai_search_summaries_restricted","TpcFeatures__enable_unmirrored_page_left_nav","DevPro__enable_firebase_workspaces_card","Profiles__enable_stripe_subscription_management","Profiles__enable_completecodelab_endpoint","DevPro__enable_developer_subscriptions","Profiles__enable_purchase_prompts","Concierge__enable_devsite_llm_tools","Profiles__require_profile_eligibility_for_signin","Cloud__enable_cloud_dlp_service","DevPro__enable_devpro_offers","Cloud__cache_serialized_dynamic_content","Profiles__enable_complete_playlist_endpoint","Profiles__enable_page_saving","DevPro__enable_code_assist","Concierge__enable_concierge","MiscFeatureFlags__enable_view_transitions","Search__enable_ai_eligibility_checks","Concierge__enable_concierge_restricted","Search__enable_page_map","MiscFeatureFlags__enable_framebox_badge_methods","Search__enable_ai_search_summaries","Profiles__enable_playlist_community_acl","DevPro__enable_enterprise","DevPro__enable_google_one_card","DevPro__enable_vertex_credit_card","DevPro__enable_free_benefits","CloudShell__cloud_shell_button","Profiles__enable_profile_collections","Cloud__enable_cloud_shell_fte_user_flow","MiscFeatureFlags__enable_explain_this_code","Analytics__enable_clearcut_logging","Concierge__enable_tutorial_this_code","Concierge__enable_remove_info_panel_tags","MiscFeatureFlags__enable_appearance_cookies","DevPro__enable_embed_profile_creation","Concierge__enable_key_takeaways","MiscFeatureFlags__developers_footer_dark_image","Cloud__fast_free_trial","Cloud__enable_cloudx_experiment_ids","Concierge__enable_pushui","CloudShell__cloud_code_overflow_menu","Profiles__enable_auto_apply_credits","Profiles__enable_public_developer_profiles","Search__enable_suggestions_from_borg","Profiles__enable_developer_profiles_callout","Profiles__enable_dashboard_curated_recommendations","MiscFeatureFlags__enable_explicit_template_dependencies","SignIn__enable_l1_signup_flow","Profiles__enable_developer_profile_pages_as_content","Cloud__enable_legacy_calculator_redirect","Experiments__reqs_query_experiments","Cloud__enable_cloud_shell","Search__enable_dynamic_content_confidential_banner","MiscFeatureFlags__enable_firebase_utm","Profiles__enable_recognition_badges"],null,null,"AIzaSyBLEMok-5suZ67qRPzx0qUtbnLmyT_kCVE","https://developerscontentserving-pa.clients6.google.com","AIzaSyCM4QpTRSqP5qI4Dvjt4OAScIN8sOUlO-k","https://developerscontentsearch-pa.clients6.google.com",1,4,null,"https://developerprofiles-pa.clients6.google.com",[1,"developers","Google for Developers","developers.google.com",null,"developers-dot-devsite-v2-prod.appspot.com",null,null,[1,1,[1],null,null,null,null,null,null,null,null,[1],null,null,null,null,null,null,[1],[1,null,null,[1,20],"/recommendations/information"],null,null,null,[1,1,1],[1,1,null,1,1,null,null,["/meridian"]],[1],null,[null,["/meridian","/youtube/devices/"]],1,null,[1]],null,[null,null,null,null,null,null,"/images/lockup-new.svg","/images/touchicon-180-new.png",null,null,null,null,1,null,null,null,null,null,null,null,null,1,null,null,null,"/images/lockup-dark-theme-new.svg",[]],[],null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,[6,1,14,15,20,22,23,29,32,36],null,[[null,null,null,[3,7,10,2,39,17,4,32,24,11,12,13,34,15,25],null,null,[1,[["docType","Choose a content type",[["Tutorial",null,null,null,null,null,null,null,null,"Tutorial"],["Guide",null,null,null,null,null,null,null,null,"Guide"],["Sample",null,null,null,null,null,null,null,null,"Sample"]]],["product","Choose a product",[["Android",null,null,null,null,null,null,null,null,"Android"],["ARCore",null,null,null,null,null,null,null,null,"ARCore"],["ChromeOS",null,null,null,null,null,null,null,null,"ChromeOS"],["Firebase",null,null,null,null,null,null,null,null,"Firebase"],["Flutter",null,null,null,null,null,null,null,null,"Flutter"],["Assistant",null,null,null,null,null,null,null,null,"Google Assistant"],["GoogleCloud",null,null,null,null,null,null,null,null,"Google Cloud"],["GoogleMapsPlatform",null,null,null,null,null,null,null,null,"Google Maps Platform"],["GooglePay",null,null,null,null,null,null,null,null,"Google Pay & Google Wallet"],["GooglePlay",null,null,null,null,null,null,null,null,"Google Play"],["Tensorflow",null,null,null,null,null,null,null,null,"TensorFlow"]]],["category","Choose a topic",[["AiAndMachineLearning",null,null,null,null,null,null,null,null,"AI and Machine Learning"],["Data",null,null,null,null,null,null,null,null,"Data"],["Enterprise",null,null,null,null,null,null,null,null,"Enterprise"],["Gaming",null,null,null,null,null,null,null,null,"Gaming"],["Mobile",null,null,null,null,null,null,null,null,"Mobile"],["Web",null,null,null,null,null,null,null,null,"Web"]]]]]],[1,1],null,1],[[["UA-24532603-1"],["UA-22084204-5"],null,null,["UA-24532603-5"],["GTM-T98GCPGN"],null,[["G-272J68FCRF"],null,null,[["G-272J68FCRF",2]]],[["UA-24532603-1",2]],null,[["UA-24532603-5",2]],[["GTM-T98GCPGN",2]],1],[[3,2],[14,11],[5,4],[4,3],[15,12],[13,10],[6,5],[11,8],[16,13],[1,1],[12,9]],[[1,1],[2,2]]],null,4,null,null,null,null,null,null,null,null,null,null,null,null,null,"developers.devsite.google",null,null,null,null,null,[]],null,"pk_live_5170syrHvgGVmSx9sBrnWtA5luvk9BwnVcvIi7HizpwauFG96WedXsuXh790rtij9AmGllqPtMLfhe2RSwD6Pn38V00uBCydV4m",1,null,"https://developerscontentinsights-pa.clients6.google.com","AIzaSyCg-ZUslalsEbXMfIo9ZP8qufZgo3LSBDU","AIzaSyDxT0vkxnY_KeINtA4LSePJO-4MAZPMRsE","https://developers.clients6.google.com",["https://codeassist.google.com","https://code-assist-free-tier.corp.google.com"],null,"AIzaSyBQom12tzI-rybN7Sf-KfeL4nwm-Rf7PmI\n"]')
+  
+</script><devsite-a11y-announce></devsite-a11y-announce>
+ </body>
+</html>

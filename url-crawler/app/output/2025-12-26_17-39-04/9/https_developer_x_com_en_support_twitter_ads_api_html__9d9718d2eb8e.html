@@ -1,0 +1,2330 @@
+<!doctype html>
+<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#" data-behavior="i18n" data-environment="prod" data-server-mode="publish" data-dc="a" class="  twtr-type--chirp">
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>X Ads API Support | X Developer Platform  </title>
+  <meta name="description" content="Get X Ads API support through X Developer here.">
+  <link rel="canonical" href="https://developer.x.com/en/support/x-ads-api">
+  <meta property="og:url" content="https://developer.x.com/en/support/x-ads-api">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="X Ads API Support">
+  <meta property="og:description" content="Get X Ads API support through X Developer here.">
+  <meta property="og:image" content="https://developer.x.com/content/dam/developer-twitter/x_sharing_card.png.twimg.768.png">
+  <meta name="keywords">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="alternate" hreflang="en" href="https://developer.x.com/en/support/x-ads-api">
+  <meta name="twitter:widgets:new-embed-design" content="on">
+  <meta name="twitter:widgets:csp" content="on">
+  <link href="https://abs.twimg.com/favicons/twitter.3.ico" rel="shortcut icon" type="image/x-icon">
+  <script type="application/json" id="analytics-settings" nonce="Lwgba2Wm2tHX9DPa4kGQSce6">{&quot;google&quot;:{&quot;accounts&quot;:[],&quot;options&quot;:{&quot;displayAdvertisingFeatures&quot;:false}},&quot;scribe&quot;:{&quot;scribeSectionWithImpression&quot;:false},&quot;trackingPixel&quot;:{},&quot;bing&quot;:{}}</script>
+  <script type="application/json" class="u14-data-layer" data-component="u14-data-layer" id="data-layer" nonce="Lwgba2Wm2tHX9DPa4kGQSce6">{"page":{"pageId":"d0dea5a","pageKey":"d0dea5a-en-en","pageName":"X Ads API Support","pagePath":"/content/developer-twitter/en/support/x-ads-api","pageType":"content-page","pagePublishDate":"","language":"en","geoRegion":"en","category":{"tags":{"tagIDs":["developer-twitter:support","developer-twitter:support/errors","developer-twitter:support/troubleshooting"],"tagNames":["Support","Errors","Troubleshooting"]},"scribe":{"component":"x-ads-api","section":"support","page":"developer","element":"page"}},"attribute":{}}}</script>
+  <link rel="preload" href="https://fonts.twitter.com/chirp/chirp-bold-italic-web.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.twitter.com/chirp/chirp-bold-web.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.twitter.com/chirp/chirp-display-extended-black-web.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.twitter.com/chirp/chirp-regular-web.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.twitter.com/chirp/chirp-regular-italic-web.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.twitter.com/chirp/chirp-extended-bold-web.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/etc/designs/developer2-twitter/public/css/chirp.css.twhash.a.f.41e1f29c2d4295d68b05db0725781db3.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/etc/designs/developer2-twitter/public/css/legacy-colors.css.twhash.a.f.20fd26d638816cbce52d44904fc9c3c2.css" type="text/css">
+  <link rel="stylesheet" href="/etc/designs/developer2-twitter/public/css/project.css.twhash.a.f.85d4ed05185d656e31d0701edef8f361.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/etc/designs/developer2-twitter/public/css/print.css.twhash.a.f.67de1c964d9398cbf614aab841910ad6.css" media="print" type="text/css">
+ </head>
+ <body class="
+        twtr-theme--blue
+        page content-page
+        page--
+        
+        twtr-color-bg--white-neutral
+        
+        js-no-scroll
+        atm-light
+      " style="--theme-color: var(--blue-dark)" data-analytics-page="developer" data-analytics-section="support" data-analytics-component="x-ads-api" data-analytics-element="page">
+  <div id="twtr-dtc-main" style="--nav-height: var(--navbar-tall)" data-dtc-rebrand-on="true" class="dtc-rebrand-flag-on">
+   <div id="twBearerToken" data-value="AAAAAAAAAAAAAAAAAAAAACHguwAAAAAAaSlT0G31NDEyg%2BSnBN5JuyKjMCU%3Dlhg0gv0nE7KKyiJNEAojQbn8Y3wJm1xidDK7VnKGBP4ByJwHPb" style="display:none"></div>
+   <div id="twAuthenticationFlag" data-value="guest" style="display:none"></div>
+   <div id="twGeoLocationRegion" data-value="other" style="display:none"></div>
+   <div class="u01-meganav__page-padding"></div>
+   <div class="u01-meganav  js-twtr-nav  twtr-color-bg--white-neutral  is-fixed">
+    <div class="twtr-container--wide">
+     <div class="twtr-grid">
+      <div class="twtr-col-12">
+       <div class="u01-meganav__container" data-bg-color="white-neutral" data-home-path="/content/developer-twitter/en" data-icon-close="<svg version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewbox=&quot;0 0 24 24&quot; style=&quot;enable-background:new 0 0 24 24;&quot; xml:space=&quot;preserve&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; role=&quot;none&quot; class=&quot;twtr-icon--md&quot;> 
+ <g> 
+  <g> 
+   <defs> 
+    <rect id=&quot;SVGID_1_&quot; x=&quot;-468&quot; y=&quot;-1360&quot; width=&quot;1440&quot; height=&quot;3027&quot; /> 
+   </defs> 
+   <clippath id=&quot;SVGID_2_&quot;> 
+    <use xlink:href=&quot;#SVGID_1_&quot; style=&quot;overflow:visible;&quot; /> 
+   </clippath> 
+  </g> 
+ </g> 
+ <rect x=&quot;-468&quot; y=&quot;-1360&quot; class=&quot;st0&quot; width=&quot;1440&quot; height=&quot;3027&quot; style=&quot;fill:rgb(0,0,0,0);stroke-width:3;stroke:rgb(0,0,0)&quot; /> 
+ <path d=&quot;M13.4,12l5.8-5.8c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L12,10.6L6.2,4.8c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4
+	l5.8,5.8l-5.8,5.8c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3l5.8-5.8l5.8,5.8c0.2,0.2,0.5,0.3,0.7,0.3
+	s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L13.4,12z&quot; /> 
+</svg>" data-icon-chevron-right="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewbox=&quot;0 0 24 24&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; role=&quot;none&quot; class=&quot;twtr-icon&quot;> 
+ <path opacity=&quot;0&quot; d=&quot;M0 0h24v24H0z&quot; /> 
+ <path d=&quot;M17.207 11.293l-7.5-7.5c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414L15.086 12l-6.793 6.793c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z&quot; /> 
+</svg>" data-icon-chevron-down="<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewbox=&quot;0 0 24 24&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; role=&quot;none&quot; class=&quot;twtr-icon&quot;> 
+ <path opacity=&quot;0&quot; d=&quot;M0 0h24v24H0z&quot; /> 
+ <path d=&quot;M20.207 7.043c-.39-.39-1.023-.39-1.414 0L12 13.836 5.207 7.043c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z&quot; /> 
+</svg>" data-icon-arrow-left="<svg width=&quot;28px&quot; height=&quot;28px&quot; viewbox=&quot;0 0 28 28&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot; role=&quot;none&quot; class=&quot;twtr-icon  u01-meganav__icon-arrow-left&quot;> 
+ <g stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot; stroke-linecap=&quot;round&quot;> 
+  <g transform=&quot;translate(-1216.000000, -298.000000)&quot; stroke-width=&quot;2.25&quot;> 
+   <g transform=&quot;translate(1200.000000, 282.000000)&quot;> 
+    <g transform=&quot;translate(17.000000, 17.000000)&quot;> 
+     <path d=&quot;M0.756410256,12.8589744 L25.7179487,12.8589744&quot;></path> 
+     <path d=&quot;M13.2371795,25.3397436 L25.7179487,12.8589744&quot;></path> 
+     <path d=&quot;M13.2371795,12.4807692 L25.3397436,0.378205128&quot; transform=&quot;translate(19.288462, 6.429487) rotate(-90.000000) translate(-19.288462, -6.429487) &quot;></path> 
+    </g> 
+   </g> 
+  </g> 
+ </g> 
+</svg>" data-left-nav-items="[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;X API&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;X API&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/products/twitter-api&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;X Ads API&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;X Ads API&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/products/x-ads-api&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;X for websites&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;X for websites&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/products/x-for-websites&quot;}],&quot;overviewTitle&quot;:&quot;Products&quot;,&quot;linkDisabled&quot;:true,&quot;title&quot;:&quot;Products&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/products&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Docs&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Docs&quot;,&quot;path&quot;:&quot;https://docs.x.com/&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Build for business&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Build for business&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/use-cases/build-for-businesses&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Build for the public&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Build for the public&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/use-cases/build-for-consumers&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Do research&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Do research&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/use-cases/do-research&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Teach \u0026 learn&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Teach \u0026 learn&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/use-cases/teach-and-learn&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Build for good&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Build for good&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/use-cases/build-for-good&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Build for fun&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Build for fun&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/use-cases/build-for-fun&quot;}],&quot;overviewTitle&quot;:&quot;Use Cases&quot;,&quot;linkDisabled&quot;:true,&quot;title&quot;:&quot;Use Cases&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/navigation/left-nav-items/use-cases&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Changelog&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Changelog&quot;,&quot;path&quot;:&quot;https://docs.x.com/updates/changelog&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Blog&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Blog&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/blog&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Newsletter&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Newsletter&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/updates/stay-informed&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;YouTube&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;YouTube&quot;,&quot;path&quot;:&quot;https://www.youtube.com/c/twitterdev&quot;}],&quot;linkDisabled&quot;:true,&quot;title&quot;:&quot;Stay informed&quot;,&quot;path&quot;:&quot;https://developer.x.com/&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Forums&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Forums&quot;,&quot;path&quot;:&quot;https://twittercommunity.com/&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Events&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Events&quot;,&quot;path&quot;:&quot;https://twitterdev.bevylabs.com/&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Insiders&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Insiders&quot;,&quot;path&quot;:&quot;https://developer.twitter.com/en/community/insiders&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Community leaders&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Community leaders&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/community/leaders&quot;}],&quot;linkDisabled&quot;:true,&quot;title&quot;:&quot;Connect&quot;,&quot;path&quot;:&quot;https://developer.x.com/&quot;}],&quot;overviewTitle&quot;:&quot;Community&quot;,&quot;linkDisabled&quot;:false,&quot;menuType&quot;:&quot;multiCategory&quot;,&quot;title&quot;:&quot;Community&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/community&quot;}]" data-right-nav-items="[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Policies&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Policies&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/developer-terms&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Developer agreement&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Developer agreement&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/developer-terms/agreement-and-policy/source&quot;}],&quot;overviewTitle&quot;:&quot;Support&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Support&quot;,&quot;path&quot;:&quot;https://developer.x.com/en/support&quot;},{&quot;isActive&quot;:false,&quot;hasActiveChild&quot;:false,&quot;children&quot;:[],&quot;overviewTitle&quot;:&quot;Developer Portal&quot;,&quot;linkDisabled&quot;:false,&quot;title&quot;:&quot;Developer Portal&quot;,&quot;path&quot;:&quot;https://developer.twitter.com/en/portal/petition/essential/basic-info&quot;}]" data-cta-enabled="true" data-profile-enabled="true" data-cta-link-new-tab="false" data-root-page-title="Developer Platform">
+       </div>
+       <div aria-label="Search" class="u01-meganav__search-modal twtr-color-bg--blue-dark" role="dialog" aria-modal="true">
+        <button aria-label="Close search menu" class="u04-search__close-button js-close-search" type="button">
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" aria-hidden="true" focusable="false" role="none" class="u04-search__close-svg  twtr-icon">
+          <g>
+           <g>
+            <defs>
+             <rect id="SVGID_1_" x="-468" y="-1360" width="1440" height="3027" />
+            </defs>
+            <clippath id="SVGID_2_">
+             <use xlink:href="#SVGID_1_" style="overflow:visible;" />
+            </clippath>
+           </g>
+          </g> <rect x="-468" y="-1360" class="st0" width="1440" height="3027" style="fill:rgb(0,0,0,0);stroke-width:3;stroke:rgb(0,0,0)" /> <path d="M13.4,12l5.8-5.8c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L12,10.6L6.2,4.8c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4
+	l5.8,5.8l-5.8,5.8c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.4,0.3,0.7,0.3s0.5-0.1,0.7-0.3l5.8-5.8l5.8,5.8c0.2,0.2,0.5,0.3,0.7,0.3
+	s0.5-0.1,0.7-0.3c0.4-0.4,0.4-1,0-1.4L13.4,12z" />
+         </svg></button>
+        <div class="search-bar search-bar--js" data-theme="blue" data-search-path="https://developer.x.com/en/search-results.html">
+         <input placeholder="Type your search here" type="search" autocomplete="off" class="search-bar__input" name="q">
+         <button id="u04-search__button" class="u04-search__button" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" aria-hidden="true" focusable="false" role="none" class="u04-search__button-icon twtr-icon--mega  twtr-color-fill--white-neutral">
+           <path opacity="0" d="M0 0h24v24H0z" /> <path d="M22.06 19.94l-3.73-3.73C19.38 14.737 20 12.942 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c1.943 0 3.738-.622 5.21-1.67l3.73 3.73c.292.294.676.44 1.06.44s.768-.146 1.06-.44c.586-.585.586-1.535 0-2.12zM11 17c-3.308 0-6-2.692-6-6s2.692-6 6-6 6 2.692 6 6-2.692 6-6 6z" />
+          </svg></button>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <main class="twtr-color-bg--white-neutral  twtr-main--bg-image  lazyload" id="twtr-main" data-bg="/content/dam/developer-twitter/redesign-2021-images/textures/background_image.jpg.twimg.768.jpg">
+    <div class="u07  is-hidden" aria-hidden="true">
+     <div class="u07__item  u07__bg-color--neutral">
+      <div class="u07__item-content">
+       <div class="u07__notification  twtr-type--bold-200  chirp--bold-200  twtr-color--gray-900">
+       </div>
+       <div class="u07__close">
+        <button type="button" class="u07__close-btn">
+         <svg xmlns="http://www.w3.org/2000/svg" width="46" height="72" viewbox="0 0 46 72" aria-hidden="true" focusable="false" role="none" class="twtr-icon">
+          <path d="M27.243 36l14.879-14.879a2.998 2.998 0 0 0 0-4.242 2.998 2.998 0 0 0-4.242 0L23 31.758 8.122 16.879a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242L18.758 36 3.879 50.879A2.998 2.998 0 0 0 6.001 56a2.99 2.99 0 0 0 2.121-.879L23 40.242l14.879 14.879A2.991 2.991 0 0 0 40 56a2.998 2.998 0 0 0 2.121-5.121L27.243 36z" />
+         </svg></button>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="ct01-columns">
+     <div class="ct01
+            
+            twtr-padding__nested--top
+            twtr-padding__nested--bottom
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            ">
+      <div class="ct01__content  twtr-container  ">
+       <div class="ct01__item  twtr-grid    ">
+        <div class="ct01__column
+                    twtr-col-md-9  twtr-order-0-xs  twtr-order-0-md  has-no-margin-bottom
+                    none
+                    ">
+         <div class="ct01__wrapper  is-vertically-centered  ">
+          <div class="cr02-responsive-visibility twtr-component twtr-component--first">
+           <div class="cr02">
+            <div class="cr02__item twtr-hidden--md  twtr-hidden--lg  twtr-hidden--xl  ">
+             <div class="b27-spacing twtr-component--last twtr-component twtr-component--first">
+              <div class="b27 twtr-spacing--mbf-700">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="cr02-responsive-visibility twtr-component">
+           <div class="cr02">
+            <div class="cr02__item twtr-hidden--sm  twtr-hidden--xs  ">
+             <div class="b27-spacing twtr-component--last twtr-component twtr-component--first">
+              <div class="b27 twtr-spacing--mbf-500">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="b02-rich-text-v3 twtr-component">
+           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  ">
+            <p><span class="chirp--regular-200 chirp--stepped"><b><a href="/en/support" target="_self" rel="nofollow noopener noreferrer">Support</a> &gt; X Ads API</b></span></p>
+           </div>
+          </div>
+          <div class="b27-spacing twtr-component">
+           <div class="b27 twtr-spacing--mbf-500">
+           </div>
+          </div>
+          <div class="b01-headline-v3 twtr-component">
+           <div class="b01-v3 b01-v3__copy--no-margin">
+            <div class="b01-v3__item">
+             <div class="b01-v3__copy">
+              <h1 class="b01-v3__headline  chirp--display-850  twtr-color--black  b01-v3--align-left  chirp--fluid">X Ads API</h1>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="b27-spacing twtr-component">
+           <div class="b27 twtr-spacing--mbf-500">
+           </div>
+          </div>
+          <div class="b02-rich-text-v3 twtr-component">
+           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-300 twtr-color--black  ">
+            <p><span class="twtr-color--gray-900"><span class="chirp--bold-400 chirp--fluid">The X Ads API connects developers to X's advertising platform. Build solutions to meet the needs of advertisers around the world.</span></span></p>
+           </div>
+          </div>
+          <div class="b27-spacing twtr-component">
+           <div class="b27 twtr-spacing--mbf-500">
+           </div>
+          </div>
+          <div class="ct09-justify-content twtr-component">
+           <div class="ct09      " style="--ct09-fixed-height: ;">
+            <div class="ct09__item">
+             <div class="ct09__wrapper  is-direction--row  is-justified-start  is-aligned-start  has-no-margin-bottom  twtr-spacing--pb-0">
+              <div class="b03-button-v3 twtr-component twtr-component--first">
+               <a class="chirp-btn twtr-spacing--mb-0 chirp-btn--black chirp-btn--tertiary chirp-btn--jumbo    twtr-scribe-clicks" href="https://developer.x.com/en/docs/twitter-ads-api.html" data-twtr-scribe-section="b03-button-v3" data-twtr-scribe-element="WU0U" data-twtr-scribe-component="documentation-" data-text="Documentation →"> Documentation → </a>
+              </div>
+              <div class="b03-button-v3 twtr-component--last twtr-component">
+               <a class="chirp-btn twtr-spacing--mb-500 chirp-btn--black chirp-btn--tertiary chirp-btn--jumbo    twtr-scribe-clicks" href="https://api.twitterstat.us/" target="_blank" rel="noopener noreferrer" data-twtr-scribe-section="b03-button-v3" data-twtr-scribe-element="M1YY" data-twtr-scribe-component="api-status-" data-text="API status →"> API status → </a>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="cr02-responsive-visibility twtr-component">
+           <div class="cr02">
+            <div class="cr02__item twtr-hidden--sm  twtr-hidden--xs  ">
+             <div class="b27-spacing twtr-component--last twtr-component twtr-component--first">
+              <div class="b27 twtr-spacing--mbf-500">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div class="cr02-responsive-visibility twtr-component--last twtr-component">
+           <div class="cr02">
+            <div class="cr02__item twtr-hidden--md  twtr-hidden--lg  twtr-hidden--xl  ">
+             <div class="b27-spacing twtr-component--last twtr-component twtr-component--first">
+              <div class="b27 twtr-spacing--mbf-700">
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="ct01__column
+                    twtr-col-md-3  twtr-order-1-xs  twtr-order-1-md
+                    none
+                    ">
+         <div class="ct01__wrapper  is-vertically-centered  ">
+          <div class="cr02-responsive-visibility twtr-component--last twtr-component twtr-component--first">
+           <div class="cr02">
+            <div class="cr02__item twtr-hidden--sm  twtr-hidden--xs  ">
+             <div class="ct09-justify-content twtr-component--last twtr-component twtr-component--first">
+              <div class="ct09      has-fixed-height--px" data-fixed-height="500" style="--ct09-fixed-height: 500;">
+               <div class="ct09__item">
+                <div class="ct09__wrapper  is-direction--row  is-justified-start  is-aligned-start  has-no-margin-bottom  twtr-spacing--pb-0">
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="ct01-columns">
+     <div class="ct01
+            
+            twtr-padding__nested--top
+            twtr-padding__section--bottom
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            ">
+      <div class="ct01__content  twtr-container  ">
+       <div class="ct01__item  twtr-grid    ">
+        <div class="ct01__column
+                    twtr-col-md-12
+                    none
+                    ">
+         <div class="ct01__wrapper    ">
+          <div class="b17-scroll-top-button twtr-component twtr-component--first">
+           <div class="b17">
+            <button class="b17__button" aria-label="Scroll to top">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" aria-hidden="true" focusable="false" role="none" class="b17__icon  twtr-color-fill--dark-gray-neutral">
+              <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 14.543l-7.5-7.5c-.39-.39-1.023-.39-1.414 0l-7.5 7.5c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 9.164l6.793 6.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414z" />
+             </svg></button>
+           </div>
+          </div>
+          <div class="ct12-content-tabs twtr-component-space--md twtr-component--last twtr-component">
+           <div class="ct12  ct12__nav ct12__background--" data-position="relative">
+            <div class="ct12__nav-item">
+             <div class="ct12__list-wrapper">
+              <ul class="ct12__list" role="tablist" aria-orientation="horizontal">
+               <li class="ct12__list-item"><a href="#item0" role="tab" aria-controls="item0" data-target-id="item0" data-title="General" data-hash="item0" class="js-show-section  ct12__link  twtr-type--roman-16  twtr-color--blue-500 has-hover  is-selected">General</a></li>
+               <li class="ct12__list-item"><a href="#item1" role="tab" aria-controls="item1" data-target-id="item1" data-title="Errors" data-hash="item1" class="js-show-section  ct12__link  twtr-type--roman-16  twtr-color--blue-500 has-hover  ">Errors</a></li>
+               <li class="ct12__list-item"><a href="#item2" role="tab" aria-controls="item2" data-target-id="item2" data-title="FAQ" data-hash="item2" class="js-show-section  ct12__link  twtr-type--roman-16  twtr-color--blue-500 has-hover  ">FAQ</a></li>
+               <li class="ct12__list-item"><a href="#item3" role="tab" aria-controls="item3" data-target-id="item3" data-title="Policy" data-hash="item3" class="js-show-section  ct12__link  twtr-type--roman-16  twtr-color--blue-500 has-hover  ">Policy</a></li>
+               <li class="ct12__list-item"><a href="#item4" role="tab" aria-controls="item4" data-target-id="item4" data-title="Community" data-hash="item4" class="js-show-section  ct12__link  twtr-type--roman-16  twtr-color--blue-500 has-hover  ">Community</a></li>
+              </ul>
+             </div>
+             <div class="ct12__dropdown-wrapper  is-closed" role="tabpanel">
+              <div class="ct12__title-wrapper  twtr-container">
+               <div class="ct12__title-content" aria-controls="id1" aria-expanded="false" aria-haspopup="listbox" role="combobox" tabindex="0" aria-activedescendant="">
+                <span class="ct12__title  twtr-type--bold-16  twtr-color--gray-900"></span>
+                <div class="ct12__icon--arrow-down">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 7.043c-.39-.39-1.023-.39-1.414 0L12 13.836 5.207 7.043c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+                 </svg>
+                </div>
+               </div>
+              </div>
+              <div class="ct12__dropdown-content  is-closed">
+               <div class="ct12__dropdown-list  twtr-container" role="listbox" id="id1" tabindex="-1">
+                <div class="ct12__dropdown-list-item  is-selected  twtr-type--roman-16  twtr-color--blue-500" data-target-id="item0" data-val="#General" role="option">
+                 General
+                </div>
+                <div class="ct12__dropdown-list-item    twtr-type--roman-16  twtr-color--blue-500" data-target-id="item1" data-val="#Errors" role="option">
+                 Errors
+                </div>
+                <div class="ct12__dropdown-list-item    twtr-type--roman-16  twtr-color--blue-500" data-target-id="item2" data-val="#FAQ" role="option">
+                 FAQ
+                </div>
+                <div class="ct12__dropdown-list-item    twtr-type--roman-16  twtr-color--blue-500" data-target-id="item3" data-val="#Policy" role="option">
+                 Policy
+                </div>
+                <div class="ct12__dropdown-list-item    twtr-type--roman-16  twtr-color--blue-500" data-target-id="item4" data-val="#Community" role="option">
+                 Community
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div class="ct12__swiper-container  swiper-container" role="tabpanel">
+             <div class="ct12__swiper-wrapper  swiper-wrapper">
+              <div class="ct12__tab  ct12__tab--0  swiper-slide  " data-target-tabid="item0">
+               <div class="ct12__tab-content    ">
+                <div class="ct05-content-dropdown twtr-component-space--md">
+                 <div class="ct05 twtr-color-bg-- twtr-color-- ct05--no-bg" aria-expanded="false">
+                  <div class="ct05__wrapper  twtr-color-bg--  has-hover">
+                   <button class="ct05__headline" type="button" name="Click to expand">
+                    <h3 class="twtr-type--bold-16 expand-text">Getting started</h3>
+                    <h3 class="twtr-type--bold-16 close-text">Getting started</h3></button>
+                   <div class="ct05__icons twtr-type--bold-16">
+                    <div class="ct05__icon_up hide">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 14.543l-7.5-7.5c-.39-.39-1.023-.39-1.414 0l-7.5 7.5c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 9.164l6.793 6.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                    <div class="ct05__icon_down">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 7.043c-.39-.39-1.023-.39-1.414 0L12 13.836 5.207 7.043c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="ct05__content">
+                   <div class="ct05__content_inner">
+                    <div class="ct01-columns twtr-component--last twtr-component twtr-component--first">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-9  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Review our <a href="/en/docs/twitter-ads-api/getting-started" rel="nofollow">Gettings Started documentation</a> to find out what’s possible to build with the different tools that are available on the Ads API platform, and how to get the access and information that you need to get started.</p>
+                            <p>We also have a series of Quick Links to help you get started:</p>
+                            <ul>
+                             <li><b><a href="/en/docs/twitter-ads-api/hierarchy-terminology" rel="nofollow">Hierarchy &amp; Glossary</a></b></li>
+                            </ul>
+                            <ul>
+                             <li><a href="/en/docs/twitter-ads-api/campaign-management/overview" rel="nofollow"><b>Campaign Management</b></a><span style="color: var(--paragraph-color); font-family: &quot;Helvetica Neue LT&quot;, &quot;Helvetica Neue&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; font-size: 0.798rem; letter-spacing: 0.025rem; word-spacing: normal;"> (</span><a href="/en/docs/twitter-ads-api/campaign-management/api-reference" rel="nofollow">API Index</a>)&nbsp;
+                              <ul>
+                              <li>Pull&nbsp;campaign metadata&nbsp; and create or manage campaigns, ad groups, and ads.&nbsp;</li>
+                              <li>Do GETs, POSTs, or PUTS on <a href="/en/docs/twitter-ads-api/campaign-management/api-reference/campaigns" rel="nofollow">Campaigns</a><span style="color: var(--paragraph-color); font-size: 0.798rem; letter-spacing: 0.025rem; font-family: &quot;Helvetica Neue LT&quot;, &quot;Helvetica Neue&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; word-spacing: normal;">, </span><a href="/en/docs/twitter-ads-api/campaign-management/api-reference/line-items" rel="nofollow">Line_items</a>,&nbsp;<a href="/en/docs/twitter-ads-api/campaign-management/api-reference/promoted-tweets" rel="nofollow">Promoted posts</a><span style="color: var(--paragraph-color); font-size: 0.798rem; letter-spacing: 0.025rem; font-family: &quot;Helvetica Neue LT&quot;, &quot;Helvetica Neue&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; word-spacing: normal;">, and </span><a href="/en/docs/twitter-ads-api/creatives/api-reference/tweets" rel="nofollow">posts</a>. Note that posts and targeting are associated with the line_item. Once a <a href="/en/docs/twitter-ads-api/creatives/api-reference/tweets" rel="nofollow">post</a><span style="font-size: 0.798rem; letter-spacing: 0.025rem;"> is associated with a line_item, a promoted_tweet ID is generated.</span></li>
+                              </ul></li>
+                            </ul>
+                            <ul>
+                             <li><b><a href="/en/docs/twitter-ads-api/analytics/overview" rel="nofollow">Analytics</a></b><span style="color: var(--paragraph-color); font-family: &quot;Helvetica Neue LT&quot;, &quot;Helvetica Neue&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; font-size: 0.798rem; letter-spacing: 0.025rem; word-spacing: normal;"> (</span><a href="/en/docs/twitter-ads-api/analytics/api-reference" rel="nofollow">API Index</a><span style="color: var(--paragraph-color); font-family: &quot;Helvetica Neue LT&quot;, &quot;Helvetica Neue&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; font-size: 0.798rem; letter-spacing: 0.025rem; word-spacing: normal;">)&nbsp;</span>
+                              <ul>
+                              <li>Use our <a href="/en/docs/twitter-ads-api/analytics/guides/active-entities" rel="nofollow">Active Entities guide</a>&nbsp;to determine what data changed within a specific time period.</li>
+                              <li><a href="/en/docs/twitter-ads-api/analytics/api-reference/synchronous" rel="nofollow">Sync endpoint</a> should be used for data within the last 7 Days.</li>
+                              <li><a href="/en/docs/twitter-ads-api/analytics/api-reference/asynchronous" rel="nofollow">Async </a>can handle up to 90 day chunks and supports <a href="/en/docs/twitter-ads-api/analytics/overview/metrics-and-segmentation#segmentation" rel="nofollow">segmentation</a>. <a href="/en/docs/twitter-ads-api/analytics/guides/asynchronous-analytics" rel="nofollow">Guide here.</a> Use async data to store historical metrics.</li>
+                              <li>View <a href="/en/docs/twitter-ads-api/analytics/overview/metrics-and-segmentation" rel="nofollow">Metrics and Segmentation</a> for list of all metrics and their associated metric groups.</li>
+                              </ul></li>
+                            </ul>
+                            <ul>
+                             <li><a href="/en/docs/twitter-ads-api/creatives/overview" rel="nofollow"><b>Creatives</b></a> (<a href="/en/docs/twitter-ads-api/creatives/api-reference" rel="nofollow">API Index</a>)<br>
+                               Upload&nbsp;<span style="color: var(--paragraph-color); font-size: 0.798rem; letter-spacing: 0.025rem; font-family: &quot;Helvetica Neue LT&quot;, &quot;Helvetica Neue&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; word-spacing: normal;">media, create </span><a href="https://business.twitter.com/en/help/campaign-setup/advertiser-card-specifications.html" rel="nofollow">Cards</a>, and create posts for organic or promoted use.
+                              <ul>
+                              <li>Media
+                              <ul>
+                              <li>Use <a href="/en/docs/twitter-api/v1/media/upload-media/api-reference/post-media-upload-init#post-media-upload-init" rel="nofollow">POST media/upload</a><span style="color: var(--paragraph-color); font-size: 0.798rem; letter-spacing: 0.025rem; font-family: &quot;Helvetica Neue LT&quot;, &quot;Helvetica Neue&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; word-spacing: normal;"> for images or </span><a href="/en/docs/twitter-api/v1/media/upload-media/api-reference/post-media-upload-init#post-media-upload-init" rel="nofollow">POST media/upload (chunked)</a> for video to upload to an account.</li>
+                              <li>Associate the media to the <a href="/en/docs/twitter-ads-api/creatives/api-reference/media-library" rel="nofollow">Media Library</a>.</li>
+                              </ul></li>
+                              <li><a href="/en/docs/twitter-ads-api/creatives/overview/revenue-cards" rel="nofollow">Cards</a>
+                              <ul>
+                              <li>We highly recommend you create cards for your posts. <a href="/en/docs/twitter-ads-api/creatives/api-reference/video-website" rel="nofollow">Video Website Cards</a>, for example, is a great creative to drive users to a website with a video.</li>
+                              </ul></li>
+                              <li>posts
+                              <ul>
+                              <li>You can create <a href="/en/docs/twitter-ads-api/creatives/api-reference/draft-tweets" rel="nofollow">Draft posts</a> to try out creatives.</li>
+                              <li><a href="/en/docs/twitter-ads-api/creatives/guides/scheduled-tweets-guide" rel="nofollow">Scheduled posts</a> are great for making posts ahead of time.</li>
+                              <li>Create or Pull <a href="/en/docs/twitter-ads-api/creatives/api-reference/tweets" rel="nofollow">posts</a>.</li>
+                              <li><a href="/en/docs/twitter-ads-api/creatives/api-reference/tweet-previews" rel="nofollow">Preview posts</a> to preview published, scheduled, or draft post with an iframe.</li>
+                              </ul></li>
+                              </ul></li>
+                            </ul>
+                            <ul>
+                             <li><a href="/en/docs/twitter-ads-api/audiences/overview" rel="nofollow"><b>Tailored Audiences</b></a> (<a href="/en/docs/twitter-ads-api/audiences/api-reference" rel="nofollow">API Index</a>) - <a href="https://business.twitter.com/en/help/campaign-setup/campaign-targeting/tailored-audiences.html" rel="nofollow">Learn more</a>
+                              <ul>
+                              <li>Use our <a href="/en/docs/twitter-ads-api/audiences/api-reference/audience" rel="nofollow">Audience API </a><span style="font-size: 0.798rem; letter-spacing: 0.025rem;">to make changes to audiences. </span><a href="/en/docs/twitter-ads-api/audiences/guides/audience-api-integration" rel="nofollow">Guide here.</a></li>
+                              <li>Ensure you are <a href="/en/docs/twitter-ads-api/audiences/overview/user-data" rel="nofollow">normalizing and hashing user data</a> properly.</li>
+                              </ul></li>
+                            </ul>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                <div class="b12-horizontal-rule">
+                 <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--light-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__paragraph--bottom">
+                 </div>
+                </div>
+                <div class="ct05-content-dropdown twtr-component-space--md">
+                 <div class="ct05 twtr-color-bg-- twtr-color-- ct05--no-bg" aria-expanded="false">
+                  <div class="ct05__wrapper  twtr-color-bg--  has-hover">
+                   <button class="ct05__headline" type="button" name="Click to expand">
+                    <h3 class="twtr-type--bold-16 expand-text">API status</h3>
+                    <h3 class="twtr-type--bold-16 close-text">API status</h3></button>
+                   <div class="ct05__icons twtr-type--bold-16">
+                    <div class="ct05__icon_up hide">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 14.543l-7.5-7.5c-.39-.39-1.023-.39-1.414 0l-7.5 7.5c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 9.164l6.793 6.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                    <div class="ct05__icon_down">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 7.043c-.39-.39-1.023-.39-1.414 0L12 13.836 5.207 7.043c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="ct05__content">
+                   <div class="ct05__content_inner">
+                    <div class="ct01-columns twtr-component--last twtr-component twtr-component--first">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-9  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Our <a href="https://api.twitterstat.us/" rel="nofollow">API status page</a> contains up-to-date information about the X Ads API and highlights ongoing and past incidents.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                <div class="b12-horizontal-rule">
+                 <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--light-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__paragraph--bottom">
+                 </div>
+                </div>
+                <div class="ct05-content-dropdown twtr-component-space--md">
+                 <div class="ct05 twtr-color-bg-- twtr-color-- ct05--no-bg" aria-expanded="false">
+                  <div class="ct05__wrapper  twtr-color-bg--  has-hover">
+                   <button class="ct05__headline" type="button" name="Click to expand">
+                    <h3 class="twtr-type--bold-16 expand-text">Using your keys and tokens</h3>
+                    <h3 class="twtr-type--bold-16 close-text">Using your keys and tokens</h3></button>
+                   <div class="ct05__icons twtr-type--bold-16">
+                    <div class="ct05__icon_up hide">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 14.543l-7.5-7.5c-.39-.39-1.023-.39-1.414 0l-7.5 7.5c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 9.164l6.793 6.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                    <div class="ct05__icon_down">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 7.043c-.39-.39-1.023-.39-1.414 0L12 13.836 5.207 7.043c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="ct05__content">
+                   <div class="ct05__content_inner">
+                    <div class="ct01-columns twtr-component--last twtr-component twtr-component--first">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-9  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Accessing the X Ads API requires a set of credentials you must pass with each API request. Your credentials consist of a set of keys and tokens that are generated when you first <a href="/en/docs/apps/overview" rel="nofollow">create an App</a> in your <a href="https://developer.twitter.com/en/apps" rel="nofollow">developer dashboard</a>. If you don’t yet have a developer account, you can <a href="https://developer.twitter.com/en/apply" rel="nofollow">apply for one</a>.</p>
+                            <p>Any users that had authorized your App via 3-legged-oauth prior to Ads API allowlisting will need to reauthorize your App to regenerate user access tokens with the permissions to access advertiser data. Please wait for your Ads API approval email before doing this.</p>
+                            <p>It is important that you <a href="/en/docs/authentication/guides/authentication-best-practices" rel="nofollow">store your keys and tokens securely</a>. In <a href="https://twittercommunity.com/t/changes-to-access-token-and-secret-management/130851/3" rel="nofollow">January 2020</a>, we stopped showing your access token and access token secret in your X developer App dashboard beyond the first time that these credentials were generated.&nbsp;</p>
+                            <p>If you lose your tokens, or believe that they have been compromised, you can regenerate your keys and tokens via the App dashboard. Note that regenerating your keys and tokens will invalidate any previous keys and tokens and you may need to rewrite and/or redeploy existing code.<br></p>
+                            <p><a href="/en/docs/authentication/guides/authentication-best-practices" rel="nofollow">Read more</a> about storing your keys and tokens securely and authentication best practice.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                <div class="b12-horizontal-rule">
+                 <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--light-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__paragraph--bottom">
+                 </div>
+                </div>
+                <div class="ct05-content-dropdown twtr-component-space--md">
+                 <div class="ct05 twtr-color-bg-- twtr-color-- ct05--no-bg" aria-expanded="false">
+                  <div class="ct05__wrapper  twtr-color-bg--  has-hover">
+                   <button class="ct05__headline" type="button" name="Click to expand">
+                    <h3 class="twtr-type--bold-16 expand-text">API limits and caps</h3>
+                    <h3 class="twtr-type--bold-16 close-text">API limits and caps</h3></button>
+                   <div class="ct05__icons twtr-type--bold-16">
+                    <div class="ct05__icon_up hide">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 14.543l-7.5-7.5c-.39-.39-1.023-.39-1.414 0l-7.5 7.5c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 9.164l6.793 6.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                    <div class="ct05__icon_down">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 7.043c-.39-.39-1.023-.39-1.414 0L12 13.836 5.207 7.043c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="ct05__content">
+                   <div class="ct05__content_inner">
+                    <div class="ct01-columns twtr-component--last twtr-component twtr-component--first">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-9  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p><a href="/en/docs/twitter-ads-api/rate-limiting" rel="nofollow">Review our documentation</a> for tips on how to avoid being rate limited or how to know where your App is at for a given rate limit.</p>
+                            <p>All endpoints require authentication, so there is no concept of unauthenticated calls and rate limits.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                <div class="b12-horizontal-rule">
+                 <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--light-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__paragraph--bottom">
+                 </div>
+                </div>
+                <div class="ct05-content-dropdown twtr-component-space--md">
+                 <div class="ct05 twtr-color-bg-- twtr-color-- ct05--no-bg" aria-expanded="false">
+                  <div class="ct05__wrapper  twtr-color-bg--  has-hover">
+                   <button class="ct05__headline" type="button" name="Click to expand">
+                    <h3 class="twtr-type--bold-16 expand-text">Get help</h3>
+                    <h3 class="twtr-type--bold-16 close-text">Get help</h3></button>
+                   <div class="ct05__icons twtr-type--bold-16">
+                    <div class="ct05__icon_up hide">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 14.543l-7.5-7.5c-.39-.39-1.023-.39-1.414 0l-7.5 7.5c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 9.164l6.793 6.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                    <div class="ct05__icon_down">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 7.043c-.39-.39-1.023-.39-1.414 0L12 13.836 5.207 7.043c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="ct05__content">
+                   <div class="ct05__content_inner">
+                    <div class="ct01-columns twtr-component--last twtr-component twtr-component--first">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-9  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Use the X community forum to get support from a global network of developers and X employees.</p>
+                           </div>
+                          </div>
+                          <div class="b03-button-v3 twtr-component">
+                           <a class="chirp-btn twtr-spacing--mb-500 chirp-btn--black chirp-btn--primary chirp-btn--jumbo    twtr-scribe-clicks" href="https://twittercommunity.com/c/advertiser-api/27" target="_blank" rel="noopener noreferrer" data-twtr-scribe-section="b03-button-v3" data-twtr-scribe-element="FDWD" data-twtr-scribe-component="x-community-forum" data-text="X Community Forum"> X Community Forum </a>
+                          </div>
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>If you belong to a X Official Partner organization, please contact your Partner Manager directly for technical support options.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="ct12__tab  ct12__tab--1  swiper-slide  " data-target-tabid="item1">
+               <div class="ct12__tab-content    ">
+                <div class="ct05-content-dropdown twtr-component-space--md">
+                 <div class="ct05 twtr-color-bg-- twtr-color-- ct05--no-bg" aria-expanded="false">
+                  <div class="ct05__wrapper  twtr-color-bg--  has-hover">
+                   <button class="ct05__headline" type="button" name="Click to expand">
+                    <h3 class="twtr-type--bold-16 expand-text">Error codes and responses</h3>
+                    <h3 class="twtr-type--bold-16 close-text">Error codes and responses</h3></button>
+                   <div class="ct05__icons twtr-type--bold-16">
+                    <div class="ct05__icon_up hide">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 14.543l-7.5-7.5c-.39-.39-1.023-.39-1.414 0l-7.5 7.5c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 9.164l6.793 6.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                    <div class="ct05__icon_down">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 7.043c-.39-.39-1.023-.39-1.414 0L12 13.836 5.207 7.043c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="ct05__content">
+                   <div class="ct05__content_inner">
+                    <div class="ct01-columns twtr-component--last twtr-component twtr-component--first">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-9  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Successful responses are indicated with a 200-series HTTP code and a JSON-based payload containing the object(s) requested, created, modified, or deleted along with an expression of the server’s interpretation of your request.</p>
+                            <p>Error responses are served with a non-200-series HTTP code. Different error codes indicate different reasons for an error.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                <div class="b12-horizontal-rule">
+                 <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--light-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__paragraph--bottom">
+                 </div>
+                </div>
+                <div class="ct05-content-dropdown twtr-component-space--md">
+                 <div class="ct05 twtr-color-bg-- twtr-color-- ct05--no-bg" aria-expanded="false">
+                  <div class="ct05__wrapper  twtr-color-bg--  has-hover">
+                   <button class="ct05__headline" type="button" name="Click to expand">
+                    <h3 class="twtr-type--bold-16 expand-text">API status codes</h3>
+                    <h3 class="twtr-type--bold-16 close-text">API status codes</h3></button>
+                   <div class="ct05__icons twtr-type--bold-16">
+                    <div class="ct05__icon_up hide">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 14.543l-7.5-7.5c-.39-.39-1.023-.39-1.414 0l-7.5 7.5c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 9.164l6.793 6.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                    <div class="ct05__icon_down">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 7.043c-.39-.39-1.023-.39-1.414 0L12 13.836 5.207 7.043c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="ct05__content">
+                   <div class="ct05__content_inner">
+                    <div class="ct01-columns twtr-component twtr-component--first">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-9  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>The X API attempts to return appropriate <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes" rel="nofollow">HTTP status codes</a> for every request.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__group--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--black  twtr-component-space--md">
+                            <p><b>Code</b></p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--black  twtr-component-space--md">
+                            <p><b>Text</b></p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--black  twtr-component-space--md">
+                            <p><b>Description</b></p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component">
+                     <div class="
+  b12
+  b12-thickness--md
+  twtr-color-border--black-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__nested--bottom">
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>200</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>OK</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Success!</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component">
+                     <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--dark-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__nested--bottom">
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>304</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Not Modified</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>There was no new data to return.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component">
+                     <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--dark-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__nested--bottom">
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>400</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Bad Request</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>The request was invalid or cannot be otherwise served. An accompanying error message will explain further. Requests without authentication are considered invalid and will yield this response.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component">
+                     <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--dark-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__nested--bottom">
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>401</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Unauthorized</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>There was a problem authenticating your request. This could be due to missing or incorrect authentication credentials. This may also be returned in other undefined circumstances.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component">
+                     <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--dark-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__nested--bottom">
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>403</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Forbidden</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>The request is understood, but it has been refused or access is not allowed. An accompanying error message will explain why. This code is used when requests are being denied due to&nbsp;<a href="https://help.twitter.com/en/rules-and-policies/twitter-limits" rel="nofollow">update limits</a>.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component">
+                     <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--dark-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__nested--bottom">
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>404</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Not Found</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>The URI requested is invalid or the resource requested, such as a user, does not exist.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component">
+                     <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--dark-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__nested--bottom">
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>406</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Not Acceptable</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Returned when an invalid format is specified in the request.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component">
+                     <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--dark-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__nested--bottom">
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>410</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Gone</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>This resource is gone. Used to indicate that an API endpoint has been turned off and is no longer available.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component">
+                     <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--dark-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__nested--bottom">
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>422</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Unprocessable Entity</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Returned when the data is unable to be processed (for example, if an image uploaded to&nbsp;<a href="/en/docs/twitter-api/v1/accounts-and-users/manage-account-settings/api-reference/post-account-update_profile_banner" rel="nofollow">POST account/update_profile_banner</a>&nbsp;is not valid, or the JSON body of a request is badly-formed).</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component">
+                     <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--dark-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__nested--bottom">
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>429</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Too Many Requests</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Returned when a request cannot be served due to the App's rate limit having been exhausted for the resource. See&nbsp;<a href="/en/docs/rate-limits" rel="nofollow">Rate Limiting</a>.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component">
+                     <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--dark-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__nested--bottom">
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>500</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Internal Server Error</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Something is broken. This is usually a temporary error, for example in a high load situation or if an endpoint is temporarily having issues. Check the&nbsp;<a href="https://api.twitterstat.us/" rel="nofollow">X API status page</a>&nbsp;or the&nbsp;<a href="https://twittercommunity.com/" rel="nofollow">developer community forum</a>&nbsp;in case others are having similar issues, or try again later.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component">
+                     <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--dark-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__nested--bottom">
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>502</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Bad Gateway</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>X is down, or being upgraded.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component">
+                     <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--dark-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__nested--bottom">
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>503</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Service Unavailable</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>The X servers are up, but overloaded with requests. Try again later.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component">
+                     <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--dark-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__nested--bottom">
+                     </div>
+                    </div>
+                    <div class="ct01-columns twtr-component">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-1  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>504</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-3  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Gateway timeout</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                        <div class="ct01__column
+                    twtr-col-md-8  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>The X servers are up, but the request couldn’t be serviced due to some failure within the internal stack. Try again later.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                    <div class="b12-horizontal-rule twtr-component--last twtr-component">
+                     <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--light-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__paragraph--bottom">
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                <div class="b12-horizontal-rule">
+                 <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--light-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__paragraph--bottom">
+                 </div>
+                </div>
+                <div class="ct05-content-dropdown twtr-component-space--md">
+                 <div class="ct05 twtr-color-bg-- twtr-color-- ct05--no-bg" aria-expanded="false">
+                  <div class="ct05__wrapper  twtr-color-bg--  has-hover">
+                   <button class="ct05__headline" type="button" name="Click to expand">
+                    <h3 class="twtr-type--bold-16 expand-text">Troubleshooting error codes</h3>
+                    <h3 class="twtr-type--bold-16 close-text">Troubleshooting error codes</h3></button>
+                   <div class="ct05__icons twtr-type--bold-16">
+                    <div class="ct05__icon_up hide">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 14.543l-7.5-7.5c-.39-.39-1.023-.39-1.414 0l-7.5 7.5c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 9.164l6.793 6.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                    <div class="ct05__icon_down">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 7.043c-.39-.39-1.023-.39-1.414 0L12 13.836 5.207 7.043c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="ct05__content">
+                   <div class="ct05__content_inner">
+                    <div class="ct01-columns twtr-component--last twtr-component twtr-component--first">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-9  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>The Ads API uses error enums vs error codes found in X Labs and other X APIs. For a full list of errors please see the <a href="/en/docs/twitter-ads-api/response-codes" rel="nofollow">Error Codes and Responses documentation</a>.</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="ct12__tab  ct12__tab--2  swiper-slide  " data-target-tabid="item2">
+               <div class="ct12__tab-content    ">
+                <div class="ct05-content-dropdown twtr-component-space--md">
+                 <div class="ct05 twtr-color-bg-- twtr-color-- ct05--no-bg" aria-expanded="false">
+                  <div class="ct05__wrapper  twtr-color-bg--  has-hover">
+                   <button class="ct05__headline" type="button" name="Click to expand">
+                    <h3 class="twtr-type--bold-16 expand-text">Why are campaign IDs different in the ads.twitter.com UI compared to the API?</h3>
+                    <h3 class="twtr-type--bold-16 close-text">Why are campaign IDs different in the ads.twitter.com UI compared to the API?</h3></button>
+                   <div class="ct05__icons twtr-type--bold-16">
+                    <div class="ct05__icon_up hide">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 14.543l-7.5-7.5c-.39-.39-1.023-.39-1.414 0l-7.5 7.5c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 9.164l6.793 6.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                    <div class="ct05__icon_down">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 7.043c-.39-.39-1.023-.39-1.414 0L12 13.836 5.207 7.043c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="ct05__content">
+                   <div class="ct05__content_inner">
+                    <div class="ct01-columns twtr-component--last twtr-component twtr-component--first">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-9  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>The UI is in base-10 when the API is in base-36. <a href="/en/docs/twitter-ads-api/campaign-management/overview" rel="nofollow">Read more</a>.</p>
+                            <p>&nbsp;</p>
+                           </div>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                <div class="b12-horizontal-rule">
+                 <div class="
+  b12
+  b12-thickness--base
+  twtr-color-border--light-gray-neutral
+  
+  twtr-margin__nested--top
+  twtr-margin__paragraph--bottom">
+                 </div>
+                </div>
+                <div class="ct05-content-dropdown twtr-component-space--md">
+                 <div class="ct05 twtr-color-bg-- twtr-color-- ct05--no-bg" aria-expanded="false">
+                  <div class="ct05__wrapper  twtr-color-bg--  has-hover">
+                   <button class="ct05__headline" type="button" name="Click to expand">
+                    <h3 class="twtr-type--bold-16 expand-text">Question still not answered</h3>
+                    <h3 class="twtr-type--bold-16 close-text">Question still not answered</h3></button>
+                   <div class="ct05__icons twtr-type--bold-16">
+                    <div class="ct05__icon_up hide">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 14.543l-7.5-7.5c-.39-.39-1.023-.39-1.414 0l-7.5 7.5c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 9.164l6.793 6.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                    <div class="ct05__icon_down">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path opacity="0" d="M0 0h24v24H0z" /> <path d="M20.207 7.043c-.39-.39-1.023-.39-1.414 0L12 13.836 5.207 7.043c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+                     </svg>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="ct05__content">
+                   <div class="ct05__content_inner">
+                    <div class="ct01-columns twtr-component--last twtr-component twtr-component--first">
+                     <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                      <div class="ct01__content    ">
+                       <div class="ct01__item  twtr-grid    ">
+                        <div class="ct01__column
+                    twtr-col-md-9  has-no-margin-bottom
+                    none
+                    ">
+                         <div class="ct01__wrapper    ">
+                          <div class="b02-rich-text-v3 twtr-component twtr-component--first">
+                           <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                            <p>Search the X community forum to browse answers to other frequently asked questions.&nbsp;<a href="https://twittercommunity.com/t/guidelines-for-reporting-issues/39526" rel="nofollow">Review our guide on how to get your question answered</a> before you post a new question.</p>
+                           </div>
+                          </div>
+                          <div class="b03-button-v3 twtr-component--last twtr-component">
+                           <a class="chirp-btn twtr-spacing--mb-500 chirp-btn--black chirp-btn--primary chirp-btn--jumbo    twtr-scribe-clicks" href="https://twittercommunity.com/c/advertiser-api/27" target="_blank" rel="noopener noreferrer" data-twtr-scribe-section="b03-button-v3" data-twtr-scribe-element="B3WJ" data-twtr-scribe-component="x-community-forum" data-text="X Community Forum"> X Community Forum </a>
+                          </div>
+                         </div>
+                        </div>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="ct12__tab  ct12__tab--3  swiper-slide  " data-target-tabid="item3">
+               <div class="ct12__tab-content    ">
+                <div class="ct01-columns">
+                 <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                  <div class="ct01__content    ">
+                   <div class="ct01__item  twtr-grid    ">
+                    <div class="ct01__column
+                    twtr-col-md-9  has-no-margin-bottom
+                    none
+                    ">
+                     <div class="ct01__wrapper    ">
+                      <div class="b02-rich-text-v3 twtr-component--last twtr-component twtr-component--first">
+                       <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                        <p>Please view the <a href="https://developer.twitter.com/en/developer-terms/ads-api-agreement" rel="nofollow">Ads API Agreement</a>.</p>
+                        <p>By agreeing to the X Ads Products and Services Agreement, you agree to the <a href="https://twitter.com/en/privacy" rel="nofollow">X Privacy Policy</a>, <a href="https://twitter.com/en/tos" rel="nofollow">Terms of Service</a>, <a href="https://developer.twitter.com/en/developer-terms/agreement-and-policy" rel="nofollow">Developer Agreement and Policy</a>, <a href="http://about.twitter.com/en_us/company/brand-resources.html" rel="nofollow">Trademark and Brand Guidelines</a>, and applicable <a href="https://legal.twitter.com/ads-terms.html" rel="nofollow">X Master Services Agreement</a>.&nbsp;<span style="color: var(--paragraph-color) ; font-family: &quot;Helvetica Neue LT&quot;, &quot;Helvetica Neue&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; font-size: calc(0.798rem); letter-spacing: 0.025rem; word-spacing: normal;">You also agree to the </span><a href="https://developer.twitter.com/en/developer-terms/agreement-and-policy" rel="nofollow">X Ads policies</a><span style="color: var(--paragraph-color) ; font-family: &quot;Helvetica Neue LT&quot;, &quot;Helvetica Neue&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; font-size: calc(0.798rem); letter-spacing: 0.025rem; word-spacing: normal;">, including those for </span><a href="https://business.twitter.com/en/help/ads-policies/other-policy-requirements/policies-for-conversion-tracking-and-tailored-audiences.html" rel="nofollow">Conversion Tracking and Tailored Audiences</a><span style="color: var(--paragraph-color) ; font-family: &quot;Helvetica Neue LT&quot;, &quot;Helvetica Neue&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; font-size: calc(0.798rem); letter-spacing: 0.025rem; word-spacing: normal;">, and </span><a href="http://gdpr.twitter.com/en/dpa.html" rel="nofollow">X's Data Processing Addendum</a><span style="color: var(--paragraph-color) ; font-family: &quot;Helvetica Neue LT&quot;, &quot;Helvetica Neue&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; font-size: calc(0.798rem); letter-spacing: 0.025rem; word-spacing: normal;">.</span></p>
+                       </div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div class="ct12__tab  ct12__tab--4  swiper-slide  " data-target-tabid="item4">
+               <div class="ct12__tab-content    ">
+                <div class="ct01-columns">
+                 <div class="ct01
+            
+            twtr-padding__paragraph--top
+            twtr-padding__paragraph--bottom
+            
+            
+            
+            
+            
+            has-no-gutter
+            
+            
+            
+            ">
+                  <div class="ct01__content    ">
+                   <div class="ct01__item  twtr-grid    ">
+                    <div class="ct01__column
+                    twtr-col-md-9  has-no-margin-bottom
+                    none
+                    ">
+                     <div class="ct01__wrapper    ">
+                      <div class="b02-rich-text-v3 twtr-component twtr-component--first">
+                       <div class="b02-v3 twtr-rte-v3 twtr-scribe-clicks-within chirp--regular-200 twtr-color--gray-900  twtr-component-space--md">
+                        <p>The X community forum is available for you to ask technical questions about the X developer platform. This is a discussions forum where you will find questions by other developers and technical information on a variety of topics related to using the X Ads API.</p>
+                        <p>We encourage you to join the conversation by responding to questions and engaging in conversations on our forum. X employees are also there to provide support.</p>
+                        <p>Before posting a new question, please <a href="https://twittercommunity.com/t/guidelines-for-reporting-issues/39526" rel="nofollow">review this guide&nbsp;</a>designed to help you get answers quickly.</p>
+                       </div>
+                      </div>
+                      <div class="b03-button-v3 twtr-component--last twtr-component">
+                       <a class="chirp-btn twtr-spacing--mb-500 chirp-btn--black chirp-btn--primary chirp-btn--jumbo    twtr-scribe-clicks" href="https://twittercommunity.com/c/advertiser-api/27" target="_blank" rel="noopener noreferrer" data-twtr-scribe-section="b03-button-v3" data-twtr-scribe-element="3CYO" data-twtr-scribe-component="x-community-forum" data-text="X Community Forum"> X Community Forum </a>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="twtr-container">
+     <div id="twtr-article-embedded-survey" class="b32"></div>
+    </div>
+   </main>
+   <div>
+    <footer class="u02fs  twtr-background--blue-extra-light  twtr-background--gray-0">
+     <div class="twtr-container">
+      <div class="twtr-grid">
+       <div class="u02fs__footer-link-col  twtr-col-12  twtr-col-md-4">
+        <a href="https://developer.x.com/en/more/developer-terms/agreement-and-policy" title="Developer policy and terms" target="_blank" class="u02fs__footer-link  twtr-type--roman-50  twtr-color--gray-900"> Developer policy and terms </a>
+       </div>
+       <div class="u02fs__footer-link-col  twtr-col-12  twtr-col-md-4">
+        <a href="http://x.com/xdevelopers" title="Follow @XDevelopers" target="_blank" class="u02fs__footer-link  twtr-type--roman-50  twtr-color--gray-900"> Follow @XDevelopers </a>
+       </div>
+       <div class="u02fs__footer-link-col  twtr-col-12  twtr-col-md-4  u02fs__subscribe-button-col">
+        <a class="b03__button
+      twtr-btn
+      twtr-btn--secondary
+      twtr-btn--size-default
+      twtr-btn-color--secondary-blue
+      u02fs__button
+      twtr-btn__icon--
+      twtr-scribe-clicks" href="/en/twitterdev-news-subscription" rel="noopener noreferrer" target="_blank" data-twtr-scribe-section="b03-button" data-twtr-scribe-element="1CV2" data-twtr-scribe-component="subscribe-to-developer-news" data-text="Subscribe to developer news"> <!--/* Button text --> Subscribe to developer news </a>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+   <div>
+    <footer class="u02 twtr-color-bg--black-neutral">
+     <div class="twtr-container">
+      <div class="u02__wrapper">
+       <div class="u02__row  u02__network-map">
+        <div class="twtr-grid  u02__twtr-grid">
+         <div class="js-accordion  u02__column">
+          <h4 class="u02__column__parent  twtr-type--bold-14  twtr-color--gray-0 is-opaque">X platform <span class="u02__icon  twtr-dtc-fill--extra-light-gray  twtr-hidden--md  twtr-hidden--lg  twtr-hidden--xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="9.5" viewbox="0 0 17 9.5" aria-hidden="true" focusable="false" role="none" class="twtr-icon--sm">
+             <path d="M16.707.293c-.39-.39-1.023-.39-1.414 0L8.5 7.086 1.707.293c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+            </svg></span></h4>
+          <ul class="u02__column__list">
+           <li class="u02__link-item"><a href="https://x.com/" title="X.com" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> X.com </a></li>
+           <li class="u02__link-item"><a href="https://docs.x.com/status" title="Status" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Status </a></li>
+           <li class="u02__link-item"><a href="https://help.x.com/resources/accessibility" title="Accessibility" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Accessibility </a></li>
+           <li class="u02__link-item"><a href="https://publish.x.com" title="Embed a post" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Embed a post </a></li>
+           <li class="u02__link-item"><a href="https://privacy.x.com/" title="Privacy Center" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Privacy Center </a></li>
+           <li class="u02__link-item"><a href="https://transparency.x.com/" title="Transparency Center" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Transparency Center </a></li>
+           <li class="u02__link-item"><a href="https://help.x.com/using-x/download-the-x-app" title="Download the X app" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Download the X app </a></li>
+           <li class="u02__link-item"><a href="https://grok.com" title="Try Grok.com" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Try Grok.com </a></li>
+          </ul>
+         </div>
+         <div class="js-accordion  u02__column">
+          <h4 class="u02__column__parent  twtr-type--bold-14  twtr-color--gray-0 is-opaque">X Corp. <span class="u02__icon  twtr-dtc-fill--extra-light-gray  twtr-hidden--md  twtr-hidden--lg  twtr-hidden--xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="9.5" viewbox="0 0 17 9.5" aria-hidden="true" focusable="false" role="none" class="twtr-icon--sm">
+             <path d="M16.707.293c-.39-.39-1.023-.39-1.414 0L8.5 7.086 1.707.293c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+            </svg></span></h4>
+          <ul class="u02__column__list">
+           <li class="u02__link-item"><a href="https://about.x.com/en" title="About the company" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> About the company </a></li>
+           <li class="u02__link-item"><a href="https://blog.x.com/" title="Company news" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Company news </a></li>
+           <li class="u02__link-item"><a href="https://about.x.com/en/who-we-are/brand-toolkit.html" title="Brand toolkit" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Brand toolkit </a></li>
+           <li class="u02__link-item"><a href="https://careers.x.com/" title="Jobs and internships" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Jobs and internships </a></li>
+           <li class="u02__link-item"><a href="https://investor.twitterinc.com/" title="Investors" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Investors </a></li>
+          </ul>
+         </div>
+         <div class="js-accordion  u02__column">
+          <h4 class="u02__column__parent  twtr-type--bold-14  twtr-color--gray-0 is-opaque">Help <span class="u02__icon  twtr-dtc-fill--extra-light-gray  twtr-hidden--md  twtr-hidden--lg  twtr-hidden--xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="9.5" viewbox="0 0 17 9.5" aria-hidden="true" focusable="false" role="none" class="twtr-icon--sm">
+             <path d="M16.707.293c-.39-.39-1.023-.39-1.414 0L8.5 7.086 1.707.293c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+            </svg></span></h4>
+          <ul class="u02__column__list">
+           <li class="u02__link-item"><a href="https://help.x.com/" title="Help Center" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Help Center </a></li>
+           <li class="u02__link-item"><a href="https://help.x.com/en/using-twitter" title="Using X" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Using X </a></li>
+           <li class="u02__link-item"><a href="https://create.x.com/" title="X for creators" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> X for creators </a></li>
+           <li class="u02__link-item"><a href="https://business.x.com/en/help.html" title="Ads Help Center" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Ads Help Center </a></li>
+           <li class="u02__link-item"><a href="https://help.x.com/en/managing-your-account" title="Managing your account" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Managing your account </a></li>
+           <li class="u02__link-item"><a href="https://preferencecenter.x.com/" title="Email Preference Center" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Email Preference Center </a></li>
+           <li class="u02__link-item"><a href="https://help.x.com/en/rules-and-policies" title="Rules and policies" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Rules and policies </a></li>
+           <li class="u02__link-item"><a href="https://help.x.com/en/forms" title="Contact us" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Contact us </a></li>
+          </ul>
+         </div>
+         <div class="js-accordion  u02__column">
+          <h4 class="u02__column__parent  twtr-type--bold-14  twtr-color--gray-0 is-opaque">Developer resources <span class="u02__icon  twtr-dtc-fill--extra-light-gray  twtr-hidden--md  twtr-hidden--lg  twtr-hidden--xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="9.5" viewbox="0 0 17 9.5" aria-hidden="true" focusable="false" role="none" class="twtr-icon--sm">
+             <path d="M16.707.293c-.39-.39-1.023-.39-1.414 0L8.5 7.086 1.707.293c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+            </svg></span></h4>
+          <ul class="u02__column__list">
+           <li class="u02__link-item"><a href="https://developer.x.com/en" title="Developer home" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Developer home </a></li>
+           <li class="u02__link-item"><a href="https://developer.x.com/en/docs" title="Documentation" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Documentation </a></li>
+           <li class="u02__link-item"><a href="https://twittercommunity.com/" title="Forums" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Forums </a></li>
+           <li class="u02__link-item"><a href="https://developer.x.com/en/community" title="Communities" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Communities </a></li>
+           <li class="u02__link-item"><a href="https://blog.x.com/developer/" title="Developer blog" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Developer blog </a></li>
+           <li class="u02__link-item"><a href="https://blog.x.com/engineering/en_us.html" title="Engineering blog" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Engineering blog </a></li>
+           <li class="u02__link-item"><a href="https://developer.x.com/en/more/developer-terms" title="Developer terms" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Developer terms </a></li>
+          </ul>
+         </div>
+         <div class="js-accordion  u02__column">
+          <h4 class="u02__column__parent  twtr-type--bold-14  twtr-color--gray-0 is-opaque">Business resources <span class="u02__icon  twtr-dtc-fill--extra-light-gray  twtr-hidden--md  twtr-hidden--lg  twtr-hidden--xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="9.5" viewbox="0 0 17 9.5" aria-hidden="true" focusable="false" role="none" class="twtr-icon--sm">
+             <path d="M16.707.293c-.39-.39-1.023-.39-1.414 0L8.5 7.086 1.707.293c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414l7.5 7.5c.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z" />
+            </svg></span></h4>
+          <ul class="u02__column__list">
+           <li class="u02__link-item"><a href="https://business.x.com/en/advertising.html" title="Advertise" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Advertise </a></li>
+           <li class="u02__link-item"><a href="https://business.x.com/" title="X for business" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> X for business </a></li>
+           <li class="u02__link-item"><a href="https://business.x.com/en/resources.html" title="Resources and guides" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Resources and guides </a></li>
+           <li class="u02__link-item"><a href="https://marketing.x.com/" title="X for marketers" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> X for marketers </a></li>
+           <li class="u02__link-item"><a href="https://marketing.x.com/en/insights" title="Marketing insights" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Marketing insights </a></li>
+           <li class="u02__link-item"><a href="https://marketing.x.com/en/success-stories" title="Brand inspiration" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> Brand inspiration </a></li>
+           <li class="u02__link-item"><a href="https://www.xadsacademy.com/sl/5c3e29ed" title="X Ads Academy" target="_blank" class="u02__link  twtr-type--roman-14 twtr-color--gray-0  is-opaque  has-hover"> X Ads Academy </a></li>
+          </ul>
+         </div>
+        </div>
+       </div>
+       <div class="u02__row  u02__legal  twtr-spacing--pt-500">
+        <div class="twtr-grid  u02__twtr-grid">
+         <div class="u02__column  u02__column--bottom">
+          <span class="u02__column-footnote  twtr-type--roman-14  twtr-color--gray-0  is-opaque"> © 2025 X Corp. </span>
+         </div>
+         <div class="u02__column  u02__column--bottom">
+          <a href="https://help.x.com/rules-and-policies/twitter-cookies" title="Cookies" target="_blank" class="u02__column-footnote  twtr-type--roman-14  twtr-color--gray-0  is-opaque has-hover"> Cookies </a>
+         </div>
+         <div class="u02__column  u02__column--bottom">
+          <a href="https://x.com/privacy" title="Privacy" target="_blank" class="u02__column-footnote  twtr-type--roman-14  twtr-color--gray-0  is-opaque has-hover"> Privacy </a>
+         </div>
+         <div class="u02__column  u02__column--bottom">
+          <a href="https://x.com/tos" title="Terms and conditions" target="_blank" class="u02__column-footnote  twtr-type--roman-14  twtr-color--gray-0  is-opaque has-hover"> Terms and conditions </a>
+         </div>
+         <div class="u02__column  u02__column--bottom  u08__language-selector">
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+   <script async src="https://platform.twitter.com/widgets.js" nonce="Lwgba2Wm2tHX9DPa4kGQSce6"></script>
+   <div id="page-props" data-page-title="X Ads API Support" data-page-path="/content/developer-twitter/en/support/x-ads-api">
+   </div>
+   <script type="text/javascript" src="/etc/designs/developer2-twitter/public/js/core.js.twhash.a.f.640343f62c7791a30f7733c8663062c1.js" nonce="Lwgba2Wm2tHX9DPa4kGQSce6"></script>
+   <script type="text/javascript" src="/etc/designs/developer2-twitter/public/js/project.js.twhash.a.f.fe1d0e9f68759f28e56c1ba89d2bc918.js" nonce="Lwgba2Wm2tHX9DPa4kGQSce6"></script>
+   <script src="/etc/designs/developer-twitter/clientlib-twtr-profile-adapter.min.twhash.a.cl.c3b119a4cc2249caed364b89790624a4.js" nonce="Lwgba2Wm2tHX9DPa4kGQSce6"></script>
+   <div id="u12" class="u12-data-protection-notice">
+    <div class="u12-data-protection-notice__item  u12-data-protection-notice__item--b is-hidden">
+     <div class="u12b-opt-in" id="u12b" data-cname="twtr_pixel_opt_in">
+      <div class="u12b-opt-in__item  u12-data-protection-notice__notice">
+       <div class="u12b-opt-in__content">
+        <div class="u12b-opt-in__copy">
+         <p class="mtc-font  twtr-font"><b>Did someone say … cookies?</b><br><br>
+           X and its partners use cookies to provide you with a better, safer and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly. <a href="https://help.twitter.com/rules-and-policies/twitter-cookies" target="_blank">Show more about your choices</a>.</p>
+        </div>
+        <div class="u12b-opt-in__choice twtr-scribe-clicks-within">
+         <ul class="u12b-opt-in__choice-list">
+          <li class="u12b-opt-in__choice-list-item">
+           <button class="u12b-opt-in__button  is-blue  u12b-opt-in__button--accept  mtc-font  twtr-font  js-accept twtr-scribe-clicks" data-twtr-scribe-section="u12-data-protection-notice" data-twtr-scribe-element="BG14" data-twtr-scribe-component="data-protection-notice">Accept all cookies</button></li>
+          <li class="u12b-opt-in__choice-list-item">
+           <button class="u12b-opt-in__button  is-naked  u12b-opt-in__button--decline  mtc-font  twtr-font  js-decline twtr-scribe-clicks" data-twtr-scribe-section="u12-data-protection-notice" data-twtr-scribe-element="BG14" data-twtr-scribe-component="data-protection-notice">Refuse non-essential cookies</button></li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="gtag" data-gtag-csv="G-RJGMY4G45L"></div>
+   <link rel="stylesheet" href="/etc/designs/common-twitter/clientlib-u12-data-protection-notice.min.twhash.a.cl.d988235e0e7b56cd6b162c18f191822b.css" type="text/css">
+   <script src="/etc/designs/common-twitter/clientlib-u12-data-protection-notice.min.twhash.a.cl.4c1430920878101111a49a7b91b4e149.js" nonce="Lwgba2Wm2tHX9DPa4kGQSce6"></script>
+  </div>
+ </body>
+</html>
