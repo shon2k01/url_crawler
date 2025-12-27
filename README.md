@@ -93,8 +93,6 @@ cd url-crawler
 ```
 
 ## Notes and limitations
-
-- No robots.txt handling or rate limiting.
 - Concurrency level is fixed to `max(4, availableProcessors)`.
 - URL canonicalization is basic; different query strings or trailing slashes
   may still be treated as distinct URLs.
