@@ -14,15 +14,14 @@ public class PageFetcher {
 
     private final OutputManager outputManager;
     private final FailureLogger failureLogger;
-
+    // Fetcher needs access to output storage and failure tracking.
     public PageFetcher(OutputManager outputManager, FailureLogger failureLogger) {
         this.outputManager = outputManager;
         this.failureLogger = failureLogger;
     }
 
-    public PageResult fetchAndSave(String url, int depth, boolean shuttingDown) {
-        if (shuttingDown) return new PageResult(url, List.of(), FetchStatus.FAILED);
-
+    // Fetch a URL, save HTML, and return extracted links.
+    public PageResult fetchAndSave(String url, int depth) {
         try {
             // Fetch with Jsoup
             Document doc = Jsoup.connect(url)
@@ -39,17 +38,12 @@ public class PageFetcher {
             // Save HTML to output/<runId>/<depth>/<safe_url>.html
             outputManager.saveHtml(depth, url, doc.outerHtml());
 
-            // Extract URLs (absolute URLs via absUrl)
+            // Extract absolute URLs from anchors.
             List<String> extracted = new ArrayList<>();
             for (Element a : doc.select("a[href]")) {
                 String href = UrlUtil.cleanHref(a.attr("href"));     // raw href can be malformed
                 if (href == null) continue;
-                String resolved;
-                try {
-                    resolved = UrlUtil.resolveAgainst(url, href);    // make it absolute
-                } catch (Exception ex) {
-                    resolved = null;
-                }
+                String resolved = UrlUtil.resolveAgainst(url, href);    // make it absolute
 
                 if (resolved != null && UrlUtil.isHttpLike(resolved)) {
                     extracted.add(resolved);
@@ -69,6 +63,10 @@ public class PageFetcher {
             // store in failures.csv
             failureLogger.add(new FailureRecord(depth, url, "FAILED", e.getMessage()));
 
+            outputManager.saveHtml(depth, url, "<!-- failed: " + UrlUtil.escapeForHtmlComment(e.getMessage()) + " -->");
+            return new PageResult(url, List.of(), FetchStatus.FAILED);
+        } catch (RuntimeException e) {
+            failureLogger.add(new FailureRecord(depth, url, "FAILED", e.getMessage()));
             outputManager.saveHtml(depth, url, "<!-- failed: " + UrlUtil.escapeForHtmlComment(e.getMessage()) + " -->");
             return new PageResult(url, List.of(), FetchStatus.FAILED);
         }

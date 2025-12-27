@@ -7,7 +7,6 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Collectors;
 
 public class UrlCrawler {
 
@@ -16,7 +15,7 @@ public class UrlCrawler {
     // Base directory for this run: output/<runId>
     private final Path runOutputDir;
 
-    // Thread pool for parallel fetches inside each depth level
+    // Thread pool for parallel fetches
     private final ExecutorService pool;
 
     // For graceful shutdown
@@ -31,42 +30,35 @@ public class UrlCrawler {
     private final AtomicInteger pagesTimedOut = new AtomicInteger(0);
 
     // Responsible for writing html files + failures.csv + optional url map
-    private final OutputManager outputManager;
+    private OutputManager outputManager;
 
     // Responsible for fetching + extracting links
-    private final PageFetcher pageFetcher;
+    private PageFetcher pageFetcher;
 
+    // Bundle task metadata with its fetch result.
+    private record TaskResult(int depth, PageResult result) { }
+
+    // Wire dependencies and thread pool for a single crawl run.
     public UrlCrawler(CrawlerConfig config) {
         this.config = config;
 
         // Each run gets its own folder so reruns never mix files
         this.runOutputDir = Paths.get("output", config.runId());
 
-        int threads = Math.max(4, Runtime.getRuntime().availableProcessors());
-        this.pool = Executors.newFixedThreadPool(threads);
+        int threadCount = Math.max(4, Runtime.getRuntime().availableProcessors());
+        this.pool = Executors.newFixedThreadPool(threadCount);
 
         this.failureLogger = new FailureLogger();
-
-        this.outputManager = new OutputManager(runOutputDir, failureLogger);
-        this.pageFetcher = new PageFetcher(outputManager, failureLogger);
 
         // If user hits Ctrl+C, mark shutdown and stop workers
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             shuttingDown = true;
-            pool.shutdownNow();
+            pool.shutdown();
         }));
     }
 
+    // Entry point for the crawl: schedules work and drains results until done.
     public void run() {
-        // BFS by depth: level 0 has startUrl, level 1 has extracted urls, etc.
-        Set<String> globalSeen = ConcurrentHashMap.newKeySet();
-        List<String> currentLevel = List.of(UrlUtil.normalize(config.startUrl()));
-
-        // When cross-level uniqueness is enabled, remember everything across all depths
-        if (config.crossLevelUniqueness()) {
-            globalSeen.addAll(currentLevel);
-        }
-
         // Make sure base output folder exists early
         try {
             Files.createDirectories(runOutputDir);
@@ -75,97 +67,100 @@ public class UrlCrawler {
             return;
         }
 
-        for (int depth = 0; depth <= config.maxDepth(); depth++) {
-            if (shuttingDown) break;
-            if (currentLevel.isEmpty()) break;
+        this.outputManager = new OutputManager(runOutputDir, failureLogger);
+        this.pageFetcher = new PageFetcher(outputManager, failureLogger);
 
-            int d = depth;
+        // Concurrent crawl: as soon as a page finishes, enqueue its children.
+        Set<String> globalSeen = ConcurrentHashMap.newKeySet();
+        Map<Integer, Set<String>> depthSeen = new HashMap<>();
+        String rootUrl = UrlUtil.normalize(config.startUrl());
 
-            // Fetch all URLs in current level in parallel
-            List<Future<PageResult>> futures = currentLevel.stream()
-                    .map(url -> pool.submit(() -> pageFetcher.fetchAndSave(url, d, shuttingDown)))
-                    .toList();
+        // When cross-level uniqueness is enabled, remember everything across all depths
+        if (config.crossLevelUniqueness()) {
+            globalSeen.add(rootUrl);
+        }
 
-            List<PageResult> results = new ArrayList<>();
-            for (Future<PageResult> f : futures) {
+        // Completion service lets us process tasks as they finish
+        ExecutorCompletionService<TaskResult> completion = new ExecutorCompletionService<>(pool);
+        //number of currently running or queued in the thread pool
+        AtomicInteger inFlight = new AtomicInteger(0);
+
+        submitTask(completion, inFlight, rootUrl, 0);
+
+        try {
+            while (inFlight.get() > 0) {
+                Future<TaskResult> future;
                 try {
-                    PageResult r = f.get();
-                    results.add(r);
-
-                    // update counters (keeps UrlCrawler as the owner of run summary)
-                    if (r.status() == FetchStatus.OK) pagesFetchedOk.incrementAndGet();
-                    else if (r.status() == FetchStatus.TIMEOUT) pagesTimedOut.incrementAndGet();
-                    else if (r.status() == FetchStatus.FAILED) pagesFailed.incrementAndGet();
-
+                    future = completion.take();
                 } catch (InterruptedException e) {
-                    // If interrupted, stop quickly and exit
                     Thread.currentThread().interrupt();
                     shuttingDown = true;
                     break;
+                }
+
+                inFlight.decrementAndGet();
+                TaskResult taskResult;
+                try {
+                    taskResult = future.get();
                 } catch (ExecutionException e) {
-                    // One task crashed; continue others
-                    failureLogger.add(new FailureRecord(d, "<unknown>", "CRASH", String.valueOf(e.getCause())));
+                    failureLogger.add(new FailureRecord(-1, "<unknown>", "CRASH", String.valueOf(e.getCause())));
+                    continue;
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                    shuttingDown = true;
+                    break;
+                }
+
+                PageResult r = taskResult.result();
+                if (r == null) continue;
+
+                // Update counters per completed task.
+                if (r.status() == FetchStatus.OK) pagesFetchedOk.incrementAndGet();
+                else if (r.status() == FetchStatus.TIMEOUT) pagesTimedOut.incrementAndGet();
+                else if (r.status() == FetchStatus.FAILED) pagesFailed.incrementAndGet();
+
+                int depth = taskResult.depth();
+                if (depth >= config.maxDepth()) continue;
+
+                // Pick up to maxUrlsPerPage unique children for this parent.
+                List<String> children = selectChildren(r, depth, globalSeen, depthSeen);
+                outputManager.writeChildrenFile(depth, r.url(), children);
+
+                if (shuttingDown) continue;
+
+                int childDepth = depth + 1;
+                for (String child : children) {
+                    submitTask(completion, inFlight, child, childDepth);
                 }
             }
-
-            // Depth summary (keeps console readable)
-            System.out.println("Depth " + depth + " done. Pages: " + currentLevel.size());
-
-            // If this is the last depth, we stop after saving
-            if (depth == config.maxDepth()) break;
-
-            // Extract next level URLs
-            List<String> next = new ArrayList<>();
-            for (PageResult r : results) {
-                if (r == null || r.extractedUrls() == null) continue;
-
-                // Take up to maxUrlsPerPage per page
-                List<String> extracted = r.extractedUrls().stream()
-                        .filter(UrlUtil::isHttpLike)
-                        .map(UrlUtil::normalize)
-                        .distinct()
-                        .limit(config.maxUrlsPerPage())
-                        .toList();
-
-                next.addAll(extracted);
-            }
-
-            // Remove duplicates in the next level itself
-            // If crossLevelUniqueness = true, also remove anything seen in previous levels
-            List<String> nextLevel;
-            if (config.crossLevelUniqueness()) {
-                nextLevel = next.stream()
-                        .filter(u -> globalSeen.add(u)) // add returns false if already seen
-                        .collect(Collectors.toList());
-            } else {
-                // uniqueness only "within this level": keep distinct here, allow repeats across depths
-                nextLevel = next.stream().distinct().toList();
-            }
-
-            System.out.println("Depth " + depth + " -> next level URLs: " + nextLevel.size());
-            currentLevel = nextLevel;
+        } finally {
+            shutdownGracefully();
+            outputManager.writeFailuresFile();   // write output/<runId>/failures.csv
+            printFinalSummary();
         }
-
-        shutdownGracefully();
-        outputManager.writeFailuresFile();   // write output/<runId>/failures.csv
-        printFinalSummary();                 // final clean summary
     }
 
+    // Stop workers with a small grace period.
     private void shutdownGracefully() {
         // Stop accepting new tasks
         pool.shutdown();
         try {
             // Wait a bit for tasks to finish
             if (!pool.awaitTermination(10, TimeUnit.SECONDS)) {
-                // Force stop if taking too long
-                pool.shutdownNow();
+                // Force stop if taking too long (only when not shutting down gracefully)
+                if (!shuttingDown) {
+                    pool.shutdownNow();
+                }
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            pool.shutdownNow();
+            if (!shuttingDown) {
+                pool.shutdownNow();
+            }
         }
     }
 
+    // Print a minimal end-of-run summary.
     private void printFinalSummary() {
         System.out.println("==== Run summary ====");
         System.out.println("Saved output under: " + runOutputDir.toString());
@@ -175,5 +170,58 @@ public class UrlCrawler {
         if (!failureLogger.isEmpty()) {
             System.out.println("Failures details: " + runOutputDir.resolve("failures.csv"));
         }
+    }
+
+    // Enqueue a single URL fetch at a given depth.
+    private void submitTask(ExecutorCompletionService<TaskResult> completion,
+                            AtomicInteger inFlight,
+                            String url,
+                            int depth) {
+        if (shuttingDown) return;
+        try {
+            inFlight.incrementAndGet();
+            completion.submit(() -> new TaskResult(depth, pageFetcher.fetchAndSave(url, depth)));
+        } catch (RejectedExecutionException e) {
+            inFlight.decrementAndGet();
+            failureLogger.add(new FailureRecord(depth, url, "REJECTED", e.getMessage()));
+        }
+    }
+
+    // Pick up to maxUrlsPerPage unique children for one parent.
+    private List<String> selectChildren(PageResult result,
+                                        int depth,
+                                        Set<String> globalSeen,
+                                        Map<Integer, Set<String>> depthSeen) {
+        List<String> children = new ArrayList<>();
+        Set<String> childrenSeen = new HashSet<>();
+        int added = 0;
+
+        List<String> extracted = result.extractedUrls();
+        if (extracted == null) return children;
+
+        int childDepth = depth + 1;
+        Set<String> depthSet = depthSeen.computeIfAbsent(childDepth, k -> new LinkedHashSet<>());
+
+        for (String raw : extracted) {
+            if (added >= config.maxUrlsPerPage()) break;
+            if (raw == null) continue;
+
+            String normalized = UrlUtil.normalize(raw);
+            if (!UrlUtil.isHttpLike(normalized)) continue;
+            if (!childrenSeen.add(normalized)) continue;
+
+            if (config.crossLevelUniqueness()) {
+                if (globalSeen.contains(normalized)) continue;
+                globalSeen.add(normalized);
+            } else {
+                if (depthSet.contains(normalized)) continue;
+                depthSet.add(normalized);
+            }
+
+            children.add(normalized);
+            added++;
+        }
+
+        return children;
     }
 }

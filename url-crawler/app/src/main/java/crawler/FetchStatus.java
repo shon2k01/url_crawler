@@ -1,6 +1,6 @@
 package crawler;
 
-//for the error logs
+// Outcome of a fetch attempt.
 public enum FetchStatus {
     OK,
     TIMEOUT,

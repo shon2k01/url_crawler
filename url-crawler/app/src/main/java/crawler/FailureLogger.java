@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class FailureLogger {
 
-    // Keep failures in memory and write them once at the end (faliure logs)
+    // Keep failures in memory and write them once at the end.
     private final Queue<FailureRecord> failures = new ConcurrentLinkedQueue<>();
 
     public void add(FailureRecord record) {

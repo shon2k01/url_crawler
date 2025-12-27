@@ -1,11 +1,10 @@
 package crawler;
 
-//convert parameters from user to a class for easy access
-
+// Parsed CLI parameters for a crawl run.
 public record CrawlerConfig(
         String startUrl,
         int maxUrlsPerPage,
         int maxDepth,
         boolean crossLevelUniqueness,
-        String runId  //uniqe id for each run, used later for output files
+        String runId  // unique id for each run, used for output files
 ) {}

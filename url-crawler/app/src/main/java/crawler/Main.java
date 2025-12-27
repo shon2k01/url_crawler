@@ -2,7 +2,10 @@ package crawler;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+
+// CLI entry point that parses args and launches the crawl.
 public class Main {
+    // Parse CLI args and launch the crawler.
     public static void main(String[] args) {
         // Validate CLI args count
         if (args.length != 4) {
@@ -45,6 +48,7 @@ public class Main {
     }
 
     //to parse CLI integer args
+    // Strict integer parsing with a clean error message.
     private static int parseInt(String s, String name) {
         try {
             return Integer.parseInt(s);
