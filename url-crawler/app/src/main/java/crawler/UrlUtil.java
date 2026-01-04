@@ -24,6 +24,7 @@ public class UrlUtil {
     }
 
     // Create a filename that always includes a hash suffix.
+    // this is a fallback for toSafeFilename when used in reserveFilename() 
     public static String toSafeFilenameWithHash(String url) {
         String safe = url.replaceAll("[^a-zA-Z0-9]+", "_");
         int maxBase = 160;
@@ -34,6 +35,8 @@ public class UrlUtil {
     }
 
     // Short hash for filenames to avoid collisions.
+    //takes the input string, hashes it with SHA‑256,
+    //returns the first 6 bytes as 12 hex characters
     private static String shortHash(String s) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");

@@ -29,7 +29,7 @@ public class UrlCrawler {
     private final AtomicInteger pagesFailed = new AtomicInteger(0);
     private final AtomicInteger pagesTimedOut = new AtomicInteger(0);
 
-    // Responsible for writing html files + failures.csv + optional url map
+    // Responsible for writing html files + failures.csv
     private OutputManager outputManager;
 
     // Responsible for fetching + extracting links
@@ -83,25 +83,28 @@ public class UrlCrawler {
         // Completion service lets us process tasks as they finish
         ExecutorCompletionService<TaskResult> completion = new ExecutorCompletionService<>(pool);
         //number of currently running or queued in the thread pool
+        //doesnt have to be atomic in the current design since only 1 thred touches it.
+        //this is designed a possibility for the future
         AtomicInteger inFlight = new AtomicInteger(0);
 
         submitTask(completion, inFlight, rootUrl, 0);
 
         try {
+            //while we still have submitted tasts
             while (inFlight.get() > 0) {
                 Future<TaskResult> future;
                 try {
-                    future = completion.take();
+                    future = completion.take(); // this is a blocking method! wait for a task to finish
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
-                    shuttingDown = true;
+                    shuttingDown = true; 
                     break;
                 }
 
                 inFlight.decrementAndGet();
                 TaskResult taskResult;
                 try {
-                    taskResult = future.get();
+                    taskResult = future.get(); //we already did take() so this should return immediately
                 } catch (ExecutionException e) {
                     failureLogger.add(new FailureRecord(-1, "<unknown>", "CRASH", String.valueOf(e.getCause())));
                     continue;
@@ -120,7 +123,7 @@ public class UrlCrawler {
                 else if (r.status() == FetchStatus.FAILED) pagesFailed.incrementAndGet();
 
                 int depth = taskResult.depth();
-                if (depth >= config.maxDepth()) continue;
+                if (depth >= config.maxDepth()) continue;  //use >= and not == in case of bug
 
                 // Pick up to maxUrlsPerPage unique children for this parent.
                 List<String> children = selectChildren(r, depth, globalSeen, depthSeen);

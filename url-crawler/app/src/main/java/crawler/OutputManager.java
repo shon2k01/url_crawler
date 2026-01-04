@@ -33,7 +33,7 @@ public class OutputManager {
             Path dir = runOutputDir.resolve(String.valueOf(depth));
             Files.createDirectories(dir);
 
-            // Convert URL to a safe filename
+            // Convert URL to a safe filename (which ends with .html)
             String fileName = filenameFor(depth, url);
             Path out = dir.resolve(fileName);
 
@@ -90,12 +90,17 @@ public class OutputManager {
         return "\"" + s + "\"";
     }
 
+    // Return a stable filename for a URL at a specific depth (memoized).
     private String filenameFor(int depth, String url) {
+        // One map per depth so filename collisions are tracked independently by level.
         ConcurrentMap<String, String> byUrl = filenameByDepth.computeIfAbsent(depth, d -> new ConcurrentHashMap<>());
+        // Reuse the same filename for the same URL at that depth.
         return byUrl.computeIfAbsent(url, u -> reserveFilename(depth, u));
     }
 
+    // Derive a .links.txt filename that matches the HTML filename for the same URL.
     private String linksFilenameFor(int depth, String url) {
+        // Match the HTML filename so the two files are easy to correlate.
         String htmlName = filenameFor(depth, url);
         if (htmlName.endsWith(".html")) {
             return htmlName.substring(0, htmlName.length() - ".html".length()) + ".links.txt";
@@ -103,14 +108,18 @@ public class OutputManager {
         return htmlName + ".links.txt";
     }
 
+    // Reserve a unique filename within a depth to avoid sanitized collisions.
     private String reserveFilename(int depth, String url) {
+        // Track used names per depth to avoid two different URLs mapping to the same filename.
         Set<String> used = usedNamesByDepth.computeIfAbsent(depth, d -> ConcurrentHashMap.newKeySet());
         String base = UrlUtil.toSafeFilename(url);
         if (used.add(base)) return base;
 
+        // Fall back to a hashed variant if the base is already taken.
         String hashed = UrlUtil.toSafeFilenameWithHash(url);
         if (used.add(hashed)) return hashed;
 
+        // If still taken (extremely unlikely), append a counter until unique.
         String withoutExt = hashed.endsWith(".html")
                 ? hashed.substring(0, hashed.length() - ".html".length())
                 : hashed;
